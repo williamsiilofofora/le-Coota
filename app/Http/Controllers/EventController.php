@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Event;
 use Image;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class EventController extends Controller
 {
@@ -16,8 +17,8 @@ class EventController extends Controller
     public function index()
     {
 
-        $event = Event::orderBy('id', 'desc')->take(6)->get();
-        return view('cardEvent', ['event' => $event]);
+        // $event = Event::orderBy('dateConcert', 'desc')->take(6)->get();
+        // return view('cardEvent', ['event' => $event]);
     }
 
     /**
@@ -43,7 +44,7 @@ class EventController extends Controller
         $event->title = $request->title;
         $event->style = $request->style;
         $event->description = $request->description;
-        $event->date = $request->date;
+        $event->dateConcert = $request->dateConcert;
         $event->image = $request->image;
         if ($request->hasFile('image')) {
             $image = $request->file('image');

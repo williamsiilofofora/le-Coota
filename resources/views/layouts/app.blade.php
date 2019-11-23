@@ -41,20 +41,52 @@
 
                     </ul>
                     <ul class="reseau navbar-nav ml-auto">
-                        <li><a href="https://www.facebook.com/Le-Coota-215139838515726/" class="fa fa-facebook"></a>
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/Le-Coota-215139838515726/" class="fa fa-facebook"></a>
                         </li>
-                        <li><a href="https://www.flickr.com/photos/lecoota" class="fa fa-flickr"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw"
-                                class="fa fa-youtube"></a></li>
-                        <li><a href="https://www.tripadvisor.fr/Attraction_Review-g675634-d4922301-Reviews-Le_Coota-Erdeven_Morbihan_Brittany.html"
-                                class="fa fa-tripadvisor"></a></li>
+                        <li class="nav-item">
+                            <a href="https://www.flickr.com/photos/lecoota" class="fa fa-flickr"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw"
+                                class="fa fa-youtube"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.tripadvisor.fr/Attraction_Review-g675634-d4922301-Reviews-Le_Coota-Erdeven_Morbihan_Brittany.html"
+                                class="fa fa-tripadvisor"></a>
+                        </li>
                     </ul>
                     <ul class="menu navbar-nav ml-auto">
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Les Evenements</a></li>
-                        <li><a href="">Les Médias</a></li>
-                    <li><a href="{{route('register')}}">register</a></li>
-                    <li><a href="{{route('event.create')}}">dashboard</a></li>
+                        @guest
+                        <li>
+                            <a href="{{route('accueil.index')}}">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menuEvent" href="#event">Les Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Les Médias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('register')}}">register</a>
+                        </li>
+                        @else
+                        <li class="nav-item">
+                            <a href="{{route('accueil.index')}}">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menuEvent" href="#event">Les Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Les Médias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('register')}}">register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('dashboard.index')}}">dashboard</a>
+                        </li>
+                        @endguest
                     </ul>
                     <div class="flex-center position-ref full-height">
                         @if (Route::has('login'))
@@ -75,9 +107,9 @@
         <main class="py-4" style="padding: 0!important">
             @yield('content')
         </main>
-            <footer>
-    @extends('layouts/footer')
-</footer>
+        <footer>
+            @extends('layouts/footer')
+        </footer>
     </div>
 </body>
 <script src={{asset('js/script.js')}} defer></script>

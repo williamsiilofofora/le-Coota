@@ -226,7 +226,9 @@ h1 {
     .card{
         margin:10px;
         width: 30%;
-        height:500px;
+        min-height:500px;
+        box-shadow:5px 5px 10px gray;
+        padding-top: 13px;
         .card-img {
             max-height: 220px;
             overflow: hidden;
@@ -250,3 +252,4 @@ iframe {
     color: grey;
     padding-top: 50px;
 }
+
