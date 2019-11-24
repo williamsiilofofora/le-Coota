@@ -279,6 +279,7 @@ h1 {
 
 #event {
   min-height: 100vh;
+  background-color: #d6d6d1;
 }
 
 #event .title {
@@ -287,6 +288,9 @@ h1 {
 
 #event .title h2 {
   font-family: "Twin-Marker" !important;
+  font-size: 45px;
+  background-color: grey;
+  margin-top: 35px;
 }
 
 #event .card {
@@ -295,6 +299,7 @@ h1 {
   min-height: 500px;
   box-shadow: 5px 5px 10px gray;
   padding-top: 13px;
+  border-radius: 25px;
 }
 
 #event .card .card-img {
@@ -317,6 +322,11 @@ iframe {
   background-color: black;
   color: grey;
   padding-top: 50px;
+}
+
+#formcard {
+  min-height: 100vh;
+  margin-top: 50px;
 }
 
 /*!

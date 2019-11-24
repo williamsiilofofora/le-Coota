@@ -216,10 +216,14 @@ h1 {
 // evenement
 #event{
     min-height: 100vh;
+    background-color:$lightgrey ;
     .title{
         text-align: center;
                h2 {
                    font-family: "Twin-Marker" !important;
+                   font-size:45px;
+                   background-color:grey;
+                   margin-top:35px;
                }
     }
 
@@ -229,6 +233,7 @@ h1 {
         min-height:500px;
         box-shadow:5px 5px 10px gray;
         padding-top: 13px;
+        border-radius:25px;
         .card-img {
             max-height: 220px;
             overflow: hidden;
@@ -253,3 +258,8 @@ iframe {
     padding-top: 50px;
 }
 
+// dashboard
+#formcard{
+    min-height: 100vh;
+    margin-top:50px;
+}
