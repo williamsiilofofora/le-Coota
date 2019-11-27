@@ -14,12 +14,14 @@
                 <h4 class="card-title">{{$events->title}}</h4>
                 <hr>
                 <h6 class="">Style: {{$events->style}}</h6>
+                <p>Origine: {{$events->origine}}</p>
                 <p>Le {{ \Carbon\Carbon::parse($events->dateConcert)->locale('fr_FR')->format('d M Y')}}</p>
                 <p class="card-text">{{Str::limit($events->description,150)}}</p>
             </div>
             <div class="card-footer">
                 <button class="btn " ></button><br>
-                <small class="text-muted">Last updated 3 mins ago</small>
+            <a href="{{ $events->lienFB}}" class="fa fa-facebook"></a>
+            <a href="{{ $events->lienUT}}"class="fa fa-youtube"></a>
             </div>
         </div>
         @endforeach

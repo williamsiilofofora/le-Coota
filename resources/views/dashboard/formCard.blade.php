@@ -11,9 +11,15 @@
         <label for="title">Nom du groupe</label><br/>
         <input type="text" name="title" placeholder="Nom du Groupe"><br/>
         <label for="date">Date du concert</label><br/>
-        <input type="date" name="dateConcert" placeholder="date de l'event"><br/>
+        <input type="datetime" name="dateConcert" placeholder="A-m-j H:m:s"><br/>
         <label for="style">Style de musique</label><br/>
         <input type="text" name="style" placeholder="style de musique"><br/>
+        <label for="origine">Origine du groupe</label><br/>
+        <input type="text" name="origine" placeholder="origine"><br/>
+        <label for="lienfb">Lien facebook</label><br/>
+        <input type="text" name="lienFB" placeholder="lien facebook"><br/>
+        <label for="lienyt">Style de musique</label><br/>
+        <input type="text" name="lienUT" placeholder="lien youtube"><br/>
         <label for="description">Description du groupe</label><br/>
         <textarea name="description" placeholder="Ecrivez votre actu"></textarea><br/>
         <label for="image">Photo</label><br/>

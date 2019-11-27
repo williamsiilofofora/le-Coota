@@ -35,10 +35,10 @@ $(document).ready(function () {
 
     // compteur js
     String.prototype.toDate = function (format) {
-        format = format || "dmy";
+        format = format || "dmyHis";
         var separator = this.match(/[^0-9]/)[0];
         var components = this.split(separator);
-        var day, month, year;
+        var day, month, year, hours, minutes, seconds;
         for (var key in format) {
             var fmt_value = format[key];
             var value = components[key];
@@ -51,12 +51,21 @@ $(document).ready(function () {
                     break;
                 case "y":
                     year = parseInt(value);
+                     break;
+                case "H":
+                    hours = parseInt(value);
+                break;
+                case "i":
+                    minutes = parseInt(value);
+                break;
+                case "s":
+                    seconds = parseInt(value);
             }
         }
-        return new Date(day, month, year);
+        return new Date(day, month, year, hours, minutes, seconds);
     };
 
-
+    
     var concerts = variableAPasser.value;
     var concert = concerts.toDate();
     console.log(concert);
@@ -70,7 +79,7 @@ $(document).ready(function () {
 
     function setDate() {
         var now = new Date();
-        var s = (((launch.getTime() - now.getTime()) / 1000) - now.getTimezoneOffset() * 60) + 75600;
+        var s = (((launch.getTime() - now.getTime()) / 1000) - now.getTimezoneOffset() * 60);
         var d = Math.floor(s / 86400);
         days.html('<strong>' + d + '</strong><br>Jour' + (d > 1 ? 's' : ''));
         s -= d * 86400;

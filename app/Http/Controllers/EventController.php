@@ -45,6 +45,9 @@ class EventController extends Controller
         $event->style = $request->style;
         $event->description = $request->description;
         $event->dateConcert = $request->dateConcert;
+        $event->origine = $request->origine;
+        $event->lienFB = $request->lienFB;
+        $event->lienUT = $request->lienUT;
         $event->image = $request->image;
         if ($request->hasFile('image')) {
             $image = $request->file('image');
