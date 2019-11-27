@@ -32,7 +32,7 @@ h1 {
 .menu li {
     margin: 0 15px;
     font-size: 23px;
-    font-family: "Twin-Marker";
+    font-family: "sylfaen";
 }
 
 .menu li a {
@@ -201,6 +201,17 @@ h1 {
 
 // css About
 #about{
+    text-align: center;
+    width:100%;
+    padding:45px 80px;
+    margin:0 auto;
+    .card-deck{
+        justify-content: space-around;
+        img{
+            width: 250px;
+            height: 180px;
+        }
+    }
     .title {
         padding:0 auto;
         text-align: center;
@@ -215,15 +226,68 @@ h1 {
 }
 // evenement
 #event{
+    padding: 30px;
     min-height: 100vh;
-    background-color:$lightgrey ;
+    background-color:whitesmoke ;
+    text-align: center;
+    .lastEvent{
+        // background-image:url("../images/interieur.jpg");
+
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        background-attachment: fixed;
+        h3 ,p {
+            color: white;
+        }
+        .desc{
+            position: relative;
+            top:-75px;
+            left:105px;
+            text-align: left;
+            color:white;
+            font-style: italic;
+        }
+        .imageArtiste{
+             border-radius: 50%;
+            width:150px;
+            height: 150px;
+            overflow: hidden;
+            img{
+           width: 160%;
+           position: relative;
+           left: -55px;
+        }
+        }
+        
+    }
+    .numbers{
+        position: relative;
+        top: -145px;
+        left: 65%;
+        .bloc{
+            width:70px;
+            height: 70px;
+            text-align: center;
+            margin:5px;
+            padding:10px 0;
+            line-height: 25px;
+            background-color: rgba(240, 255, 240, 0.568);
+            strong{
+                font-size: 30px;
+                font-weight: bolder;
+            }
+        }
+    }
     .title{
         text-align: center;
                h2 {
+                   color:red;
                    font-family: "Twin-Marker" !important;
                    font-size:45px;
-                   background-color:grey;
-                   margin-top:35px;
+                //    background-color:grey;
+                   margin-bottom: 25px;
                }
     }
 
@@ -234,6 +298,9 @@ h1 {
         box-shadow:5px 5px 10px gray;
         padding-top: 13px;
         border-radius:25px;
+        button{
+            background-color:$red;
+        }
         .card-img {
             max-height: 220px;
             overflow: hidden;

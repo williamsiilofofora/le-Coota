@@ -106,7 +106,7 @@ h1 {
 .menu li {
   margin: 0 15px;
   font-size: 23px;
-  font-family: "Twin-Marker";
+  font-family: "sylfaen";
 }
 
 .menu li a {
@@ -264,6 +264,22 @@ h1 {
   z-index: 1;
 }
 
+#about {
+  text-align: center;
+  width: 100%;
+  padding: 45px 80px;
+  margin: 0 auto;
+}
+
+#about .card-deck {
+  justify-content: space-around;
+}
+
+#about .card-deck img {
+  width: 250px;
+  height: 180px;
+}
+
 #about .title {
   padding: 0 auto;
   text-align: center;
@@ -278,8 +294,65 @@ h1 {
 }
 
 #event {
+  padding: 30px;
   min-height: 100vh;
-  background-color: #d6d6d1;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#event .lastEvent {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+}
+
+#event .lastEvent h3,
+#event .lastEvent p {
+  color: white;
+}
+
+#event .lastEvent .desc {
+  position: relative;
+  top: -75px;
+  left: 105px;
+  text-align: left;
+  color: white;
+  font-style: italic;
+}
+
+#event .lastEvent .imageArtiste {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+#event .lastEvent .imageArtiste img {
+  width: 160%;
+  position: relative;
+  left: -55px;
+}
+
+#event .numbers {
+  position: relative;
+  top: -145px;
+  left: 65%;
+}
+
+#event .numbers .bloc {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px 0;
+  line-height: 25px;
+  background-color: rgba(240, 255, 240, 0.568);
+}
+
+#event .numbers .bloc strong {
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 #event .title {
@@ -287,10 +360,10 @@ h1 {
 }
 
 #event .title h2 {
+  color: red;
   font-family: "Twin-Marker" !important;
   font-size: 45px;
-  background-color: grey;
-  margin-top: 35px;
+  margin-bottom: 25px;
 }
 
 #event .card {
@@ -300,6 +373,10 @@ h1 {
   box-shadow: 5px 5px 10px gray;
   padding-top: 13px;
   border-radius: 25px;
+}
+
+#event .card button {
+  background-color: #e3342f;
 }
 
 #event .card .card-img {

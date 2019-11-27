@@ -11,9 +11,8 @@
                     </ul>
                 </div>
                 <span>Ou nous trouver ?</span>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10758.076780229732!2d-3.157807874681357!3d47.61603803917109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48106eecc66402ed%3A0x534c8bcd53d9a5de!2sLe+Coota!5e0!3m2!1sfr!2sfr!4v1564432609800!5m2!1sfr!2sfr"
-                    width="250" height="170" frameborder="0" style="border:0" allowfullscreen>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53734.96476495288!2d-3.158236!3d47.615442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x534c8bcd53d9a5de!2sLe%20Coota!5e1!3m2!1sfr!2sfr!4v1574774122414!5m2!1sfr!2sfr"
+                 width="250" height="170" frameborder="0" style="border:0;" allowfullscreen="">
                 </iframe>
             </div>
             <div class=" col-lg-4">

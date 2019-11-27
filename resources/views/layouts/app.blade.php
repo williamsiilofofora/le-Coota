@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Le COOTA</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -51,10 +51,7 @@
                             <a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw"
                                 class="fa fa-youtube"></a>
                         </li>
-                        <li class="nav-item">
-                            <a href="https://www.tripadvisor.fr/Attraction_Review-g675634-d4922301-Reviews-Le_Coota-Erdeven_Morbihan_Brittany.html"
-                                class="fa fa-tripadvisor"></a>
-                        </li>
+                        
                     </ul>
                     <ul class="menu navbar-nav ml-auto">
                         @guest
@@ -62,10 +59,10 @@
                             <a href="{{route('accueil.index')}}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="menuEvent" href="#event">Les Evenements</a>
+                            <a class="menuEvent" href="#event">Les Concerts</a>
                         </li>
                         <li class="nav-item">
-                            <a href="">Les Médias</a>
+                            <a href="">Les Archives</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('register')}}">register</a>
@@ -75,13 +72,10 @@
                             <a href="{{route('accueil.index')}}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="menuEvent" href="#event">Les Evenements</a>
+                            <a class="menuEvent" href="#event">Les Concerts</a>
                         </li>
                         <li class="nav-item">
-                            <a href="">Les Médias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{route('register')}}">register</a>
+                            <a href="">Les Archives</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('dashboard.index')}}">dashboard</a>
@@ -92,7 +86,7 @@
                         @if (Route::has('login'))
                         <div class="top-right links">
                             @auth
-                            <a href="{{ url('/home') }}">Home</a>
+                            <a href="{{ url('/') }}">Home</a>
                             @else
                             <a href="{{ route('login') }}">Login</a>
 

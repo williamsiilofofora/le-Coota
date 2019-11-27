@@ -15,6 +15,11 @@ class AccueilController extends Controller
     public function index()
     {
         $dateToday = Carbon::now();
+        $lastEvent = Event::orderBy('dateConcert', 'asc')->where('dateConcert', '>=', $dateToday)->take(1)->get();
+        // $concert = $lastEvent->dateConcert;
+        // $concert = Event::select('dateConcert')->where('dateConcert', '>=', $dateToday)->take(1)->get();
+        // $concert = Carbon::parse($items->dateConcert)->format('Y,m,d');
+    //  todo recuperer la dateconcert et la formater type 2019,06,30,21,00,00
         $event = Event::orderBy('dateConcert', 'asc')->where('dateConcert','>=',$dateToday)->take(6)->get();
         $randNumber1 = rand(1, 27);
         $randNumber2 = rand(1, 27);
@@ -22,7 +27,7 @@ class AccueilController extends Controller
         $cootaImg1=  "coota".($randNumber1).".jpeg";
         $cootaImg2 =  "coota" . ($randNumber2) . ".jpeg";
         $cootaImg3 =  "coota" . ($randNumber3) . ".jpeg";
-        return view('accueil', compact('cootaImg1','cootaImg2','cootaImg3','event','dateToday'));
+        return view('accueil', compact('cootaImg1','cootaImg2','cootaImg3','event','dateToday','lastEvent','concert'));
     }
 
     /**

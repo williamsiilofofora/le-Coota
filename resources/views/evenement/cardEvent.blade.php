@@ -3,10 +3,10 @@
         <h2>Les concerts</h2>
     </div>
 
-    <div class="card-deck container " style="display: -webkit-inline-box;">
+    <div class="card-deck container" style="display: -webkit-inline-box;">
 
-        @foreach ($event as $events)
-        <div class="card col-xl-4">
+       @foreach ($event as $events) 
+        <div class="card col-xl-4  mb-4">
             <div class="card-img"><img class="card-img-top" src="{{asset('images/thumb') }}/{{$events->image}}"
                     alt="Card image cap"></div>
 
@@ -18,7 +18,7 @@
                 <p class="card-text">{{Str::limit($events->description,150)}}</p>
             </div>
             <div class="card-footer">
-                <button class="btn btn-success"></button><br>
+                <button class="btn " ></button><br>
                 <small class="text-muted">Last updated 3 mins ago</small>
             </div>
         </div>

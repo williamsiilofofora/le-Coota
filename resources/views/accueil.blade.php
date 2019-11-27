@@ -7,11 +7,13 @@
 </section>
 
 <section id="about">
-    @include('about.about')
+    @include('about.about2')
 </section>
 
-<section id="event">
+<section id="event"> 
+    @include('evenement.lastEvent')
     @include('evenement.cardEvent')
+    
 </section>
 
 <section class="visite container-fluid">
