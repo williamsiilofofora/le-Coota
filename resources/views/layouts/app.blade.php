@@ -107,5 +107,5 @@
     </div>
 </body>
 <script src={{asset('js/script.js')}} defer></script>
-
+<script src={{asset('js/jquery.viewportchecker.js')}} defer></script>
 </html>

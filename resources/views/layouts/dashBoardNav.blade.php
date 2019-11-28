@@ -29,11 +29,14 @@
                 <aside class="col-12 col-md-2 p-0 bg-dark">
                     <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start">
                         <div class="collapse navbar-collapse" id="">
-                            <a class="navbar-brand" href="{{ url('/') }}">
-                                <h1>LE COOTA</h1>
-                            </a>
+
                             <ul class="menu flex-md-column flex-row navbar-nav w-100 justify-content-between">
-                                <li class="nav-item"><a class="nav-link pl-0" href="{{route('accueil.index')}}">Accueil</a></li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="{{ url('/') }}">
+                                        <h1>LE COOTA</h1>
+                                    </a></li>
+                                <li class="nav-item"><a class="nav-link pl-0"
+                                        href="{{route('accueil.index')}}">Accueil</a></li>
                                 <li class="nav-item"><a class="nav-link pl-0" href="">Les Evenements</a></li>
                                 <li class="nav-item"><a class="nav-link pl-0" href="">Les Médias</a></li>
                                 <li class="nav-item"><a class="nav-link pl-0" href="{{route('register')}}">register</a>
@@ -54,10 +57,10 @@
                         </div>
                     </nav>
                 </aside>
-            <main class="py-4" style="padding: 0!important">
-            @yield('content')
-        </main>
-        </div>
+                <main class="py-4" style="padding: 0!important">
+                    @yield('content')
+                </main>
+            </div>
         </div>
         <footer>
             @extends('layouts/footer')

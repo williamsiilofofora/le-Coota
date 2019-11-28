@@ -19,19 +19,12 @@ $(document).ready(function () {
                 scrollTop: $("#event").offset().top - 90
             }, 1500);
     });
-
-
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 150) {
-    //         $("#bandeau").css({
-    //             "background-color": "black"
-    //         });
-    //     } else {
-    //         $("#bandeau").css({
-    //             "background-color": "transparent"
-    //         });
-    //     }
-    // });
+    // ViewportChecker
+    $('.last').addClass('hidden').viewportChecker({
+        classToAdd:'visible animated fadeInLeft',
+        offset: 100
+    });
+    
 
     // compteur js
     String.prototype.toDate = function (format) {
@@ -53,7 +46,7 @@ $(document).ready(function () {
                     year = parseInt(value);
                      break;
                 case "H":
-                    hours = parseInt(value);
+                    hours = parseInt(value) - 1;
                 break;
                 case "i":
                     minutes = parseInt(value);
@@ -65,12 +58,8 @@ $(document).ready(function () {
         return new Date(day, month, year, hours, minutes, seconds);
     };
 
-    
-    var concerts = variableAPasser.value;
-    var concert = concerts.toDate();
-    console.log(concert);
+    var concert = (variableAPasser.value).toDate();
     var launch = new Date(concert);
-    console.log(launch);
     var days = $('#days');
     var hours = $('#hours');
     var minutes = $('#minutes');

@@ -5,7 +5,7 @@
             imagined climbing to freedom. So easy, so simple! And like shipwrecked men turning to seawater foregoing
             uncontrollable thirst, many have died trying. And then here there can be no true </p>
     </div>
-    <div class="card-deck">
+    <div class="row">
         <div class="card col-xl-2 md-1 ">
             <div class="card-img"><img class="card-img-top" src="{{ asset('images/interieur.jpg')}}"
                     alt="Card image cap"></div>

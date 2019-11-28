@@ -13,8 +13,7 @@ class AccueilController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-
+    {   
         $dateToday = Carbon::now();
         $lastEvent = Event::orderBy('dateConcert', 'asc')->where('dateConcert', '>=', $dateToday)->take(1)->get();
         $event = Event::orderBy('dateConcert', 'asc')->where('dateConcert','>=',$dateToday)->take(6)->get();
@@ -24,7 +23,7 @@ class AccueilController extends Controller
         $cootaImg1=  "coota".($randNumber1).".jpeg";
         $cootaImg2 =  "coota" . ($randNumber2) . ".jpeg";
         $cootaImg3 =  "coota" . ($randNumber3) . ".jpeg";
-        return view('accueil', compact('cootaImg1','cootaImg2','cootaImg3','event','dateToday','lastEvent'));
+        return view('accueil', compact('cootaImg1','cootaImg2','cootaImg3','event','dateToday','lastEvent','modal'));
     }
 
     /**
@@ -56,7 +55,9 @@ class AccueilController extends Controller
      */
     public function show($id)
     {
-        //
+        
+        $modal = Event::findOrFail($id);
+        return view('accueil',  compact('modal')); 
     }
 
     /**

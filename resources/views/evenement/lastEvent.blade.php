@@ -3,7 +3,7 @@
     <h3>Prochain concert</h3>
         <p>Retrouvez {{$lastEvent->title}} le
             {{ \Carbon\Carbon::parse($lastEvent->dateConcert)->locale('fr_FR')->format('d M Y')}}</p>
-    <div class='container'>
+    <div class='container last'>
         <div class="imageArtiste"><img class="" src="{{asset('images/thumb') }}/{{$lastEvent->image}}" alt=""></div>
         <div class=" col-6 desc"><p >{{Str::limit($lastEvent->description,150)}}</p></div>
     </div>
