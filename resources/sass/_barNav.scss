@@ -1,0 +1,39 @@
+// bar nav
+
+.main-menu {
+    // background-color: white !important;
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    // box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2);
+}
+.navbar{
+    padding: 0 !important;
+}
+.menu li {
+    margin: 0 15px;
+    font-size: 23px;
+    font-family: "impact", "sylfaen";
+}
+
+.menu li a {
+    text-decoration: none;
+    color: $black;
+}
+
+.reseau {
+    list-style: none;
+}
+
+.reseau li {
+    margin-right: 25px;
+    font-size: 35px;
+}
+
+.reseau li a {
+    text-decoration: none;
+    color: $black;
+}

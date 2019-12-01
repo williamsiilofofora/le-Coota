@@ -1,0 +1,138 @@
+/* css slider */
+.background {
+    position: relative;
+    z-index: 1;
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(to top, black, orangered);
+    overflow: hidden;
+}
+
+.background::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .background {
+        height: 700px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .background {
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .background {
+        height: 400px;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+
+    z-index: 100 !important;
+}
+
+.slide-down {
+    position: absolute;
+    bottom: 15px;
+    z-index: 100;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    cursor: pointer;
+    margin-bottom: 80px;
+
+}
+
+
+.slide-down .line {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: white;
+    -webkit-animation: slide_down 2s linear infinite;
+    animation: slide_down 2s linear infinite;
+    text-align: center;
+    align-items: center;
+
+    .fa {
+        font-size: 50px;
+        position: relative;
+        bottom: 2px;
+    }
+}
+
+
+.carousel-caption {
+    text-align: center;
+    // align-content: center;
+    max-height: 100vh;
+    top: 25%;
+    bottom: auto;
+
+    .content {
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            z-index: 1;
+            color: #ffffff;
+            margin-bottom: 0;
+            font-weight: 600;
+            display: inline-block;
+            font-family: "Twin-Marker" !important;
+            @include breakpoint(tablet) {
+                font-size: 50px;
+            }
+            @include breakpoint(laptop) {
+                font-size: 120px;
+            }
+
+        }
+
+        img {
+            max-height: 100vh !important;
+        }
+    }
+}
+
+// @media only screen and (min-width: 768px) and (max-width: 991px) {
+//     .content h2 {
+//         font-size: 80px;
+//     }
+// }
+
+// @media only screen and (max-width: 767px) {
+//     .content h2 {
+//         font-size: 50px;
+//     }
+// }
+
+.zone {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Twin-Marker" !important;
+    color: #ffffff;
+    margin-bottom: 55%;
+}
+
+.bg {
+
+    width: 100%;
+    height: 960px;
+    position: relative;
+    z-index: 1;
+    padding: 0 0px;
+    overflow: hidden;
+}

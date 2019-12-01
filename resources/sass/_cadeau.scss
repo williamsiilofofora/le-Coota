@@ -1,0 +1,22 @@
+#cadeaux{
+    padding-bottom:15px;
+    min-height: 400px;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    h2{
+         font-family: Impact,
+         Haettenschweiler,
+         'Arial Narrow Bold',
+         sans-serif;
+         font-size: 33px;
+         font-weight: bolder;
+        
+    }
+    iframe{ 
+        height: 300px;
+         @include breakpoint(laptop) {
+             height:200px;
+         }
+         
+    }
+}

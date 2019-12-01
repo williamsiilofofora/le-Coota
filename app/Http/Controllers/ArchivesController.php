@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Event;
 use Illuminate\Http\Request;
+use App\Event;
 use Carbon\Carbon;
-class AccueilController extends Controller
+class ArchivesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,15 +15,8 @@ class AccueilController extends Controller
     public function index()
     {
         $dateToday = Carbon::now();
-        $lastEvent = Event::orderBy('dateConcert', 'asc')->where('dateConcert', '>=', $dateToday)->take(1)->get();
-        $event = Event::orderBy('dateConcert', 'asc')->where('dateConcert','>=',$dateToday)->take(6)->get();
-        $randNumber1 = rand(1, 27);
-        $randNumber2 = rand(1, 27);
-        $randNumber3 = rand(1, 27);
-        $cootaImg1=  "coota".($randNumber1).".jpeg";
-        $cootaImg2 =  "coota" . ($randNumber2) . ".jpeg";
-        $cootaImg3 =  "coota" . ($randNumber3) . ".jpeg";
-        return view('accueil', compact('cootaImg1','cootaImg2','cootaImg3','event','dateToday','lastEvent'));
+        $eventArchives = Event::orderBy('dateConcert', 'desc')->where('dateConcert', '<', $dateToday)->get();
+        return view('archives.archives', compact('eventArchives'));
     }
 
     /**
@@ -55,8 +48,7 @@ class AccueilController extends Controller
      */
     public function show($id)
     {
-        $modal = Event::findOrFail($id);
-        return view('accueil',  compact('modal')); 
+        //
     }
 
     /**

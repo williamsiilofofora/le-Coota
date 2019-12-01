@@ -25,17 +25,17 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark bg-white shadow-sm main-menu fixed-top">
-            <div class="container-fluid " id="bandeau">
+            <div class="container-fluid " id="bandeau" style="width:100%;">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <h1>LE COOTA</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" style='background-color:gray;'></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style='background-color:white;'>
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
@@ -62,7 +62,7 @@
                             <a class="menuEvent" href="#event">Les Concerts</a>
                         </li>
                         <li class="nav-item">
-                            <a href="">Les Archives</a>
+                            <a href="{{route('archives.index')}}">Les Archives</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('register')}}">register</a>
@@ -75,7 +75,7 @@
                             <a class="menuEvent" href="#event">Les Concerts</a>
                         </li>
                         <li class="nav-item">
-                            <a href="">Les Archives</a>
+                            <a href="{{route('archives.index')}}">Les Archives</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('dashboard.index')}}">dashboard</a>
@@ -102,10 +102,12 @@
             @yield('content')
         </main>
         <footer>
-            @extends('layouts/footer')
+            @include('layouts/footer')
         </footer>
     </div>
 </body>
 <script src={{asset('js/script.js')}} defer></script>
 <script src={{asset('js/jquery.viewportchecker.js')}} defer></script>
+
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> --}}
 </html>

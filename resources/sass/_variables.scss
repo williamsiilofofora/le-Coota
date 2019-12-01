@@ -2,6 +2,7 @@
 $body-bg: #f8fafc;
 
 // Typography
+
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
@@ -19,3 +20,41 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 $black: rgb(63, 59, 59);
 $lightgrey:rgb(214, 214, 209);
+
+
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin breakpoint($point) {
+    @if $point==desktop {
+        @media (min-width: 70em) {
+            @content ;
+        }
+    }
+
+    @else if $point==laptop {
+        @media (min-width: 64em) {
+            @content ;
+        }
+    }
+
+    @else if $point==tablet {
+        @media (min-width: 50em) {
+            @content ;
+        }
+    }
+
+    @else if $point==phablet {
+        @media (min-width: 37.5em) {
+            @content ;
+        }
+    }
+
+    @else if $point==mobileonly {
+        @media (max-width: 37.5em) {
+            @content ;
+        }
+
+    }
+}

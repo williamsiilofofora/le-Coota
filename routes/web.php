@@ -17,4 +17,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/dashboard', 'EventController@store')->name('event.store');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
-// Route::get('/formCard', 'EventController@create')->name('event.create');
+Route::get('/archives', 'ArchivesController@index')->name('archives.index');

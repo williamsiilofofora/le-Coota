@@ -1,5 +1,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@font-face {
+    font-family: "Twin-Marker";
+    src: url('/fonts/Twin-Marker.ttf') format("truetype");
+}
 
 
 // Variables
@@ -7,6 +11,15 @@
 
 //style
 @import 'style';
+@import 'listStyle';
+@import 'slider';
+@import 'about';
+@import 'event';
+@import 'barNav';
+@import 'cadeau';
+@import 'archives';
+
+
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';

@@ -9,7 +9,7 @@
             <img class="d-block w-100" src="{{asset('images')}}/{{$cootaImg1}}" alt="">
             <div class="carousel-caption">
 
-                <div class="content text-center align-items-center justify-content-center">
+                <div class="content text-center ">
                     <h2 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;"
                         class="animated fadeInUp">LE COOTA </h2><br />
                     <p data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 1;"
@@ -22,7 +22,7 @@
             <img class="d-block w-100" src="{{asset('images')}}/{{$cootaImg2}}" alt="">
             <div class="carousel-caption">
 
-                <div class="content text-center align-items-center justify-content-center">
+                <div class="content text-center ">
                     <h2 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;"
                         class="animated fadeInUp">LE COOTA</h2><br />
                     <p data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 1;"
@@ -35,7 +35,7 @@
             <img class="d-block w-100 img-fluid" src="{{asset('images')}}/{{$cootaImg3}}" alt="">
             <div class="carousel-caption">
 
-                <div class="content text-center align-items-center justify-content-center">
+                <div class="content text-center ">
                     <h2 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;"
                         class="animated fadeInUp">LE COOTA </h2><br />
                     <p data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 1;"

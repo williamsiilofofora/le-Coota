@@ -17,9 +17,12 @@ class CreateEventTable extends Migration
             $table->bigIncrements('id');
             $table->text('title');
             $table->text('description');
-            $table->date('dateConcert');
+            $table->dateTime('dateConcert');
             $table->string('style');
             $table->string('image')->nullable();
+            $table->string('origine');
+            $table->string('lienFB');
+            $table->string('lienUT');
             $table->timestamps();
         });
     }

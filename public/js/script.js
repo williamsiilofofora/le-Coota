@@ -21,10 +21,13 @@ $(document).ready(function () {
     });
     // ViewportChecker
     $('.last').addClass('hidden').viewportChecker({
-        classToAdd:'visible animated fadeInLeft',
+        classToAdd: 'visible animated fadeInLeft delay-1s',
         offset: 100
     });
-    
+    $('.box').addClass('hidden').viewportChecker({
+        classToAdd: 'visible animated bounceIn delay-1s',
+        offset: 100
+    });
 
     // compteur js
     String.prototype.toDate = function (format) {
@@ -86,5 +89,8 @@ $(document).ready(function () {
 
         setTimeout(setDate, 1000);
     }
+
+// animation text
+    
 
 });

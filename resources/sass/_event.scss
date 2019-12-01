@@ -1,0 +1,156 @@
+// evenement
+#event {
+    padding: 30px;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    text-align: center;
+ 
+    .fa {
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        margin: 15px 10px;
+    }
+    // .event{
+    // .col-lg-4,
+    // .col-xl-4 {
+    //     flex: 0 0 30%;
+    //     flex-basis: 30% !important;
+    //     max-width: 30%;
+    // }
+    // }
+    .lastEvent {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        background-attachment: fixed;
+        .title{
+            background-color: rgba(240, 255, 240, 0.568);
+            h3 {
+
+                font-size: 2.25rem;
+                color: black;
+                margin-top:10px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            p {
+                color: black;
+                font-size: 1.30rem;
+            }
+        }
+
+        .desc {
+            position: relative;
+            top: -75px;
+            left: 105px;
+            text-align: left;
+            color: white;
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        .imageArtiste {
+            border: 2px white solid;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+
+            img {
+                width: 160%;
+                position: relative;
+                left: -55px;
+            }
+        }
+
+    }
+
+    .numbers {
+        justify-content: space-around;
+        position: relative;
+        top: -50px;
+        left: 10%;
+
+        border:1px solid rgba(240, 255, 240, 0.568);
+    @include breakpoint(desktop) {
+        top: -165px;
+        left: 65%;
+    }
+
+        .bloc {
+
+            text-align: center;
+            margin: 10px 10px 10px 10px;
+            padding: 10px 0;
+            line-height: 25px;
+            background-color: rgba(240, 255, 240, 0.568);
+
+            strong {
+                 font-family: Impact,
+                 Haettenschweiler,
+                 'Arial Narrow Bold',
+                 sans-serif;
+                font-size: 30px;
+                font-weight: bolder;
+            }
+        }
+    }
+    .title {
+        text-align: center;
+        width: 100%;
+        h2 {
+            color: black;
+            font-size: 2.25rem;
+             font-family: Impact,
+             Haettenschweiler,
+             'Arial Narrow Bold',
+             sans-serif;
+             @include breakpoint(desktop) {
+                 font-size: 3.25rem;
+             }
+        }
+    }
+.row{
+    margin:0;
+}
+    .card {
+        margin: 10px;
+
+        min-height: 500px;
+        box-shadow: 5px 5px 10px gray;
+        padding-top: 13px;
+        border-radius: 25px;
+
+        button {
+            background-color: $red;
+        }
+
+        .card-img {
+            max-height: 220px;
+            overflow: hidden;
+
+            img {
+                border-radius: 20px;
+                width: 100%;
+                height: auto;
+                @include breakpoint(desktop) {
+                    height: 180px;
+                }
+            }
+        }
+    }
+
+    .modal {
+        .modal-content {
+            border-radius: 25px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

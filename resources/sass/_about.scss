@@ -1,0 +1,67 @@
+// css About
+#about {
+    
+    text-align: center;
+    width: 100%;
+    .content{
+        padding: 15px 0 12px 0;
+      h1{
+        color:black;
+        font-weight: bolder;
+        line-height: 0.8;
+        font-size: 3.25rem;
+      
+    }
+    }
+    
+
+    .row {
+        justify-content: space-around;
+
+        .card-img-top {
+            width: 100%;
+            
+            margin-top: 15px;
+            @include breakpoint(laptop) {
+                height: auto;
+            }
+            @include breakpoint(desktop) {
+                height: 180px;
+            }
+        }
+
+        .title {
+            padding: 0 auto;
+            text-align: center;
+
+            h2 {
+                font-family: "Twin-Marker" !important;
+            }
+        }
+    }
+
+    .modal {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+// visit
+.visite {
+    text-align: center;
+    // background-image: url('./public/images/coota2.jpeg');
+    h2 {
+        font-family: Impact,
+            Haettenschweiler,
+            'Arial Narrow Bold',
+            sans-serif;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+}
+
+iframe {
+    object-fit: cover;
+}
