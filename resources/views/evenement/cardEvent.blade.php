@@ -5,11 +5,11 @@
       
     </div>
 
-    <div class="row container event">
+    <div class="row container-fluid ">
 
         @foreach ($event as $events)
 
-        <div class="card col-11 col-lg-4 mx-auto">
+        <div class="card col-12 col-lg-5 mx-auto event">
             <div class="card-img image-fluid">
                 <img class="card-img-top" src="{{asset('images/thumb') }}/{{$events->image}}" alt="Card image cap">
             </div>

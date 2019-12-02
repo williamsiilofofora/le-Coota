@@ -4,7 +4,7 @@
     min-height: 100vh;
     background-color: whitesmoke;
     text-align: center;
- 
+
     .fa {
         border-radius: 50%;
         background-color: red;
@@ -14,26 +14,31 @@
         padding: 7px;
         margin: 15px 10px;
     }
-    // .event{
-    // .col-lg-4,
-    // .col-xl-4 {
-    //     flex: 0 0 30%;
-    //     flex-basis: 30% !important;
-    //     max-width: 30%;
-    // }
-    // }
+
+    .event {
+        @include breakpoint(desktop) {
+            flex: 0 0 30%;
+            flex-basis: 30% !important;
+            max-width: 30%;
+        }
+
+
+    }
+
     .lastEvent {
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: center;
         background-attachment: fixed;
-        .title{
+
+        .title {
             background-color: rgba(240, 255, 240, 0.568);
+
             h3 {
 
                 font-size: 2.25rem;
                 color: black;
-                margin-top:10px;
+                margin-top: 10px;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
 
@@ -75,11 +80,12 @@
         top: -50px;
         left: 10%;
 
-        border:1px solid rgba(240, 255, 240, 0.568);
-    @include breakpoint(desktop) {
-        top: -165px;
-        left: 65%;
-    }
+        border: 1px solid rgba(240, 255, 240, 0.568);
+
+        @include breakpoint(desktop) {
+            top: -165px;
+            left: 65%;
+        }
 
         .bloc {
 
@@ -90,33 +96,38 @@
             background-color: rgba(240, 255, 240, 0.568);
 
             strong {
-                 font-family: Impact,
-                 Haettenschweiler,
-                 'Arial Narrow Bold',
-                 sans-serif;
+                font-family: Impact,
+                    Haettenschweiler,
+                    'Arial Narrow Bold',
+                    sans-serif;
                 font-size: 30px;
                 font-weight: bolder;
             }
         }
     }
+
     .title {
         text-align: center;
         width: 100%;
+
         h2 {
             color: black;
             font-size: 2.25rem;
-             font-family: Impact,
-             Haettenschweiler,
-             'Arial Narrow Bold',
-             sans-serif;
-             @include breakpoint(desktop) {
-                 font-size: 3.25rem;
-             }
+            font-family: Impact,
+                Haettenschweiler,
+                'Arial Narrow Bold',
+                sans-serif;
+
+            @include breakpoint(desktop) {
+                font-size: 3.25rem;
+            }
         }
     }
-.row{
-    margin:0;
-}
+
+    .row {
+        margin: 0;
+    }
+
     .card {
         margin: 10px;
 
@@ -137,6 +148,7 @@
                 border-radius: 20px;
                 width: 100%;
                 height: auto;
+
                 @include breakpoint(desktop) {
                     height: 180px;
                 }

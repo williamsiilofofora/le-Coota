@@ -9,15 +9,19 @@
         color:black;
         font-weight: bolder;
         line-height: 0.8;
-        font-size: 3.25rem;
-      
+        font-size: 2.50rem;
+         @include breakpoint(desktop) {
+            font-size: 3.25rem;
+         }
     }
     }
     
 
     .row {
         justify-content: space-around;
-
+        .card{
+            margin-bottom: 25px;
+        }
         .card-img-top {
             width: 100%;
             

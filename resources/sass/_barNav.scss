@@ -12,11 +12,22 @@
 }
 .navbar{
     padding: 0 !important;
+    h1{
+        margin-left:25px;
+    }
+    .navbar-toggler{
+    margin-right:25px;
+    }
 }
 .menu li {
     margin: 0 15px;
-    font-size: 23px;
+    font-size: 1.20rem;
     font-family: "impact", "sylfaen";
+     @include breakpoint(desktop) {
+        font-size: 1.50rem;
+     }
+
+   
 }
 
 .menu li a {
@@ -29,8 +40,11 @@
 }
 
 .reseau li {
-    margin-right: 25px;
+    margin-right: 5px;
     font-size: 35px;
+      @include breakpoint(desktop) {
+          margin-right: 25px;
+      }
 }
 
 .reseau li a {

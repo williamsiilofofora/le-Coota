@@ -5,6 +5,17 @@
     border-bottom: 3px solid;
     border-image-source: linear-gradient(to top, black, orangered);
     overflow: hidden;
+    
+
+    //   @include breakpoint(tablet) {
+    //       height: 400px;
+    //   }
+
+    //   @include breakpoint(laptop) {
+    //       height: 700px;
+    //   }
+
+     
 }
 
 .background::after {
@@ -18,23 +29,23 @@
 
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .background {
-        height: 700px;
-    }
-}
+// @media only screen and (min-width: 992px) and (max-width: 1199px) {
+//     .background {
+//         height: 700px;
+//     }
+// }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .background {
-        height: 650px;
-    }
-}
+// @media only screen and (min-width: 768px) and (max-width: 991px) {
+//     .background {
+//         height: 650px;
+//     }
+// }
 
-@media only screen and (max-width: 767px) {
-    .background {
-        height: 400px;
-    }
-}
+// @media only screen and (max-width: 767px) {
+//     .background {
+//         height: 400px;
+//     }
+// }
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -92,6 +103,7 @@
             font-weight: 600;
             display: inline-block;
             font-family: "Twin-Marker" !important;
+         
             @include breakpoint(tablet) {
                 font-size: 50px;
             }
@@ -124,15 +136,25 @@
     font-size: 40px;
     font-family: "Twin-Marker" !important;
     color: #ffffff;
-    margin-bottom: 55%;
+     @include breakpoint(mobileonly) {
+        font-size: 1.50rem;
+     }
+
 }
 
 .bg {
 
     width: 100%;
-    height: 960px;
+    background-position-x: center;
     position: relative;
+    top:80px;
     z-index: 1;
     padding: 0 0px;
-    overflow: hidden;
+    // overflow: hidden;
+     @include breakpoint(desktop) {
+         height: 99vh;
+     }
+       @include breakpoint(mobileonly) {
+           height: 280px;
+       }
 }
