@@ -88,7 +88,7 @@
                             @auth
                             <a href="{{ url('/') }}">Home</a>
                             @else
-                            <a href="{{ route('login') }}">Login</a>
+                            <a style='margin-right=25px' href="{{ route('login') }}"><i class="fa fa-cog"></i></a>
 
                             @endauth
                         </div>

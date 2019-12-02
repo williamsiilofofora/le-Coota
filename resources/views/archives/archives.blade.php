@@ -9,6 +9,17 @@
     </div>
     <h4 class="box col-3 mx-auto" >Ils sont tous passé ici</h4>
     <p>Retrouvez tout les artistes qui sont passer au coota</p>
+    <div class="col-4">
+        <form action="/search" method="GET">
+            {{ csrf_field() }}
+            <div class="input-group">
+            <input type="search" name="search" class="form-control">
+            <span class="input-group-prepend">
+                <button type="submit" class="btn btn-primary">Rechercher</button>
+            </span>
+        </div>
+        </form>
+    </div>
     <div class=" list-type1 archive container ">
         <ol>
             @foreach ($eventArchives as $eventArchives)
@@ -28,7 +39,7 @@
             </li>
 
             @endforeach
-
+{{-- {{ $eventArchives->links('archives.archives') }} --}}
         </ol>
     </div>
 </section>
