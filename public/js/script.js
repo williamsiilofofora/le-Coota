@@ -90,7 +90,8 @@ $(document).ready(function () {
         setTimeout(setDate, 1000);
     }
 
-// animation text
-    
+// pagination
+$val = val.value;
+    echo ($val);
 
 });

@@ -124,72 +124,34 @@ h1 {
   margin-top: 50px;
 }
 
-.list-type1 {
-  width: 400px;
-  margin: 0 auto;
+@media (min-width: 70em) {
+  .list-type {
+    width: 90vw;
+  }
 }
 
-.list-type1 .fa {
+.list-type tbody td {
+  vertical-align: middle;
+}
+
+.list-type tbody td a {
   border-radius: 50%;
-  background-color: red;
+  background-color: #0084ff;
   color: white;
   width: 30px;
   height: 30px;
   padding: 7px;
 }
 
-.list-type1 ol {
-  counter-reset: li;
-  list-style: none;
-  *list-style: decimal;
-  font-size: 17px;
-  font-family: "Raleway", sans-serif;
-  padding: 0;
-  margin-bottom: 4em;
-}
-
-.list-type1 ol ol {
-  margin: 0 0 0 2em;
-}
-
-.list-type1 .list {
-  position: relative;
-  display: block;
-  padding: 0.4em 0.4em 0.4em 2em;
-  *padding: 0.4em;
-  margin: 0.5em 0;
-  background: orangered;
-  color: #000;
-  text-decoration: none;
-  border-radius: 10em;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.list-type1 .list:hover {
+.list-type tbody td:hover {
   background: #d6d4d4;
   text-decoration: none;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
-.list-type1 .list:before {
-  content: counter(li);
-  counter-increment: li;
-  position: absolute;
-  left: -1.3em;
-  top: 47%;
-  margin-top: -1.3em;
-  background: orange;
-  height: 3em;
-  width: 3em;
-  line-height: 2em;
-  border: 0.3em solid #fff;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 2em;
-  color: #FFF;
-  font-size: 18px;
+.list-type tbody .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 /* css slider */
@@ -394,14 +356,16 @@ iframe {
      object-fit: cover;
 }
 
-#event {
+#event,
+#concert {
   padding: 30px;
   min-height: 100vh;
   background-color: whitesmoke;
   text-align: center;
 }
 
-#event .fa {
+#event .fa,
+#concert .fa {
   border-radius: 50%;
   background-color: red;
   color: white;
@@ -412,7 +376,8 @@ iframe {
 }
 
 @media (min-width: 70em) {
-  #event .event {
+  #event .event,
+  #concert .event {
     -webkit-box-flex: 0;
             flex: 0 0 30%;
     flex-basis: 30% !important;
@@ -420,30 +385,35 @@ iframe {
   }
 }
 
-#event .lastEvent {
+#event .lastEvent,
+#concert .lastEvent {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
   background-attachment: fixed;
 }
 
-#event .lastEvent .title {
+#event .lastEvent .title,
+#concert .lastEvent .title {
   background-color: rgba(240, 255, 240, 0.568);
 }
 
-#event .lastEvent .title h3 {
+#event .lastEvent .title h3,
+#concert .lastEvent .title h3 {
   font-size: 2.25rem;
   color: black;
   margin-top: 10px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-#event .lastEvent .title p {
+#event .lastEvent .title p,
+#concert .lastEvent .title p {
   color: black;
   font-size: 1.3rem;
 }
 
-#event .lastEvent .desc {
+#event .lastEvent .desc,
+#concert .lastEvent .desc {
   position: relative;
   top: -75px;
   left: 105px;
@@ -453,7 +423,8 @@ iframe {
   font-size: 1rem;
 }
 
-#event .lastEvent .imageArtiste {
+#event .lastEvent .imageArtiste,
+#concert .lastEvent .imageArtiste {
   border: 2px white solid;
   border-radius: 50%;
   width: 150px;
@@ -461,13 +432,15 @@ iframe {
   overflow: hidden;
 }
 
-#event .lastEvent .imageArtiste img {
+#event .lastEvent .imageArtiste img,
+#concert .lastEvent .imageArtiste img {
   width: 160%;
   position: relative;
   left: -55px;
 }
 
-#event .numbers {
+#event .numbers,
+#concert .numbers {
   justify-content: space-around;
   position: relative;
   top: -50px;
@@ -476,13 +449,15 @@ iframe {
 }
 
 @media (min-width: 70em) {
-  #event .numbers {
+  #event .numbers,
+  #concert .numbers {
     top: -165px;
     left: 65%;
   }
 }
 
-#event .numbers .bloc {
+#event .numbers .bloc,
+#concert .numbers .bloc {
   text-align: center;
   margin: 10px 10px 10px 10px;
   padding: 10px 0;
@@ -490,34 +465,40 @@ iframe {
   background-color: rgba(240, 255, 240, 0.568);
 }
 
-#event .numbers .bloc strong {
+#event .numbers .bloc strong,
+#concert .numbers .bloc strong {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 30px;
   font-weight: bolder;
 }
 
-#event .title {
+#event .title,
+#concert .title {
   text-align: center;
   width: 100%;
 }
 
-#event .title h2 {
+#event .title h2,
+#concert .title h2 {
   color: black;
   font-size: 2.25rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 @media (min-width: 70em) {
-  #event .title h2 {
+  #event .title h2,
+  #concert .title h2 {
     font-size: 3.25rem;
   }
 }
 
-#event .row {
+#event .row,
+#concert .row {
   margin: 0;
 }
 
-#event .card {
+#event .card,
+#concert .card {
   margin: 10px;
   min-height: 500px;
   box-shadow: 5px 5px 10px gray;
@@ -525,32 +506,38 @@ iframe {
   border-radius: 25px;
 }
 
-#event .card button {
+#event .card button,
+#concert .card button {
   background-color: #e3342f;
 }
 
-#event .card .card-img {
+#event .card .card-img,
+#concert .card .card-img {
   max-height: 220px;
   overflow: hidden;
 }
 
-#event .card .card-img img {
+#event .card .card-img img,
+#concert .card .card-img img {
   border-radius: 20px;
   width: 100%;
   height: auto;
 }
 
 @media (min-width: 70em) {
-  #event .card .card-img img {
+  #event .card .card-img img,
+  #concert .card .card-img img {
     height: 180px;
   }
 }
 
-#event .modal .modal-content {
+#event .modal .modal-content,
+#concert .modal .modal-content {
   border-radius: 25px;
 }
 
-#event .modal img {
+#event .modal img,
+#concert .modal img {
   width: 100%;
 }
 
@@ -637,7 +624,6 @@ iframe {
 
 #archive {
   margin-top: 90px;
-  text-align: center;
 }
 
 #archive .headerArchives {

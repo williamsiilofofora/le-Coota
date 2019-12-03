@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Event;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
+
 use Illuminate\Pagination\Paginator;
 class ArchivesController extends Controller
 {
@@ -16,7 +18,8 @@ class ArchivesController extends Controller
     public function index()
     {
         $dateToday = Carbon::now();
-        $eventArchives = Event::orderBy('dateConcert', 'desc')->where('dateConcert', '<', $dateToday)->get();
+        $eventArchives = Event::orderBy('dateConcert', 'desc')->where('dateConcert', '<', $dateToday)->paginate(10);
+    
         return view('archives.archives', compact('eventArchives'));
     }
 
@@ -31,14 +34,18 @@ class ArchivesController extends Controller
     }
     public function search(Request $request)
     {
+        
         $search = $request->get('search');
         $eventArchives = Event::orderBy('dateConcert', 'desc')
         ->where('style','like','%'.$search.'%')
         ->orWhere('title', 'like', '%'. $search .'%')
         ->orWhere('origine', 'like', '%'. $search .'%')
-        ->paginate(5);
+        ->orWhere('dateConcert', 'like', '%' . $search . '%')
+        ->paginate(10);
+        
         return view('archives.archives', compact('eventArchives'));
     }
+  
     /**
      * Store a newly created resource in storage.
      *

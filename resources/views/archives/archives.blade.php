@@ -2,45 +2,83 @@
 
 @section('content')
 <section id="archive">
-    <div class="headerArchives">
+    <div class="headerArchives" >
 
         <img src="{{asset('images/cootajpg.jpg')}} " alt="">
 
     </div>
-    <h4 class="box col-3 mx-auto" >Ils sont tous passé ici</h4>
-    <p>Retrouvez tout les artistes qui sont passer au coota</p>
-    <div class="col-4">
-        <form action="/search" method="GET">
-            {{ csrf_field() }}
-            <div class="input-group">
-            <input type="search" name="search" class="form-control">
-            <span class="input-group-prepend">
-                <button type="submit" class="btn btn-primary">Rechercher</button>
-            </span>
-        </div>
-        </form>
-    </div>
-    <div class=" list-type1 archive container ">
-        <ol>
-            @foreach ($eventArchives as $eventArchives)
-            <li>
-                <div class="list row" style="text-align:left;">
-
-                    <span class="col-3">"{{$eventArchives->title}}"</span>
-                    <span class=" col-3"><strong>Style:</strong> {{$eventArchives->style}}</span>
-                    <span class=" col-3"><strong>Origine:</strong> {{$eventArchives->origine}}</span>
-                    <span class=" col-3"><strong>Passé le:</strong> {{$eventArchives->dateConcert}}</span>
-                    <a href="{{ $eventArchives->lienFB}}" class="fa fa-facebook" target="_blank"></a>
-                    <a href="{{ $eventArchives->lienUT}}" class="fa fa-youtube" target="_blank"></a>
-
-
+    <div style="text-align: center;">
+    <h4 class="box col-3 mx-auto">Ils sont tous passé ici</h4>
+</div>
+    <div class="container-fluid ">
+        <div class="table-wrapper mx-auto list-type">
+            <div class="table-title">
+                <div class="row flex-row justify-content-around">
+                    <div class="col-sm-4">
+                    <div class="show-entries">
+                        <span>Montrer</span>
+                        <select>
+                            <option class='val'value="5">5</option>
+                            <option class='val' value="10">10</option>
+                            <option class='val' value="15">15</option>
+                            <option class='val' value="20">20</option>
+                        </select>
+                       
+                        <span>entrées</span>
+                    </div>
                 </div>
+                    <div class="col-4">
+                        <p>Retrouvez tout les artistes qui sont passer au coota</p>
+                    </div>
+                    <div class="col-4">
+                        <form action="/search" method="GET">
+                            {{ csrf_field() }}
+                            <div class="input-group">
+                                <span class="input-group-prepend"><button type="submit" class="btn btn-primary"><i
+                                            class="fa fa-search"></i></button></span>
+                                <input type="search" name="search" class="form-control" placeholder="Rechercher">
+                            </div>
 
-            </li>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nom <i class="fa fa-sort"></i></th>
+                        <th>Style <i class="fa fa-sort"></th>
+                        <th>Origine <i class="fa fa-sort"></i></th>
+                        <th>Date <i class="fa fa-sort"></th>
+                        <th>Facebook </th>
+                        <th>You Tube</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($eventArchives as $eventArchive)
+                    <tr class="">
+                        <td><img class="circle" src="{{asset('images/thumb') }}/{{$eventArchive->image}}"
+                                alt="Card image cap"></td>
+                        <td>{{$eventArchive->title}}</td>
+                        <td>{{$eventArchive->style}}</td>
+                        <td>{{$eventArchive->origine}}</td>
+                        <td>{{$eventArchive->dateConcert}}</td>
+                        <td> <a href="{{ $eventArchive->lienFB}}" class="fa fa-facebook" target="_blank"></a></td>
+                        <td>
+                            <a href="{{ $eventArchive->lienUT}}" class="fa fa-youtube" target="_blank"></a>
 
-            @endforeach
-{{-- {{ $eventArchives->links('archives.archives') }} --}}
-        </ol>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+           
+            <div class="clearfix">
+                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                <div> {{$eventArchives->links()}}</div> 
+            </div>
+        </div>
     </div>
 </section>
 @endsection

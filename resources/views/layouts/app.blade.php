@@ -59,7 +59,7 @@
                             <a href="{{route('accueil.index')}}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="menuEvent" href="#event">Les Concerts</a>
+                            <a class="" href="{{route('concert.index')}}">Les Concerts</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('archives.index')}}">Les Archives</a>
@@ -72,7 +72,7 @@
                             <a href="{{route('accueil.index')}}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="menuEvent" href="#event">Les Concerts</a>
+                            <a class="" href="{{route('concert.index')}}">Les Concerts</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('archives.index')}}">Les Archives</a>
@@ -102,7 +102,7 @@
             @yield('content')
         </main>
         <footer class="footer">
-            @include('layouts/footer2')
+            @include('layouts/footer')
         </footer>
     </div>
 </body>

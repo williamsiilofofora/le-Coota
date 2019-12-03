@@ -17,6 +17,7 @@ class AccueilController extends Controller
         $dateToday = Carbon::now();
         $lastEvent = Event::orderBy('dateConcert', 'asc')->where('dateConcert', '>=', $dateToday)->take(1)->get();
         $event = Event::orderBy('dateConcert', 'asc')->where('dateConcert','>=',$dateToday)->take(6)->get();
+        
         $randNumber1 = rand(1, 27);
         $randNumber2 = rand(1, 27);
         $randNumber3 = rand(1, 27);
