@@ -20,16 +20,16 @@
     <input type=hidden id="variableAPasser" value=<?php echo $concert ; ?>>
 
     <div class="numbers row col-10 col-sm-10 col-lg-7 col-xl-3 ">
-        <div class="bloc col-2" id="days">
+        <div class="bloc col-3 col-sm-2 " id="days">
 
         </div>
-        <div class="bloc col-2" id="hours">
+        <div class="bloc col-3 col-sm-2" id="hours">
 
         </div>
-        <div class="bloc col-2" id="minutes">
+        <div class="bloc col-3 col-sm-2" id="minutes">
 
         </div>
-        <div class="bloc col-2" id="seconds">
+        <div class="bloc col-3 col-sm-2" id="seconds">
 
         </div>
     </div>

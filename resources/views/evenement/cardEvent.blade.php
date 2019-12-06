@@ -1,8 +1,8 @@
 <div class="container">
     <div class="title box col-8 col-sm-6 col-lg-3 col-xl-4 mx-auto">
-       
+
         <h2>Les concerts</h2>
-      
+
     </div>
 
     <div class="row container-fluid ">

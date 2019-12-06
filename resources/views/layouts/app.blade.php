@@ -24,6 +24,8 @@
 
 <body>
     <div id="app">
+        <div id="rgpd">
+        @include('RGPD.bandeauRGPD')</div>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm main-menu fixed-top">
             <div class="container-fluid " id="bandeau" style="width:100%;">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -86,22 +88,33 @@
                         @if (Route::has('login'))
                         <div class="top-right links">
                             @auth
-                            <a href="{{ url('/') }}">Home</a>
+                          <a class="nav-link roue" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                document.getElementById('logout-form').submit();">
+                                           <i class="fa fa-cog"></i>
+                                        </a>
+                        
                             @else
-                            <a style='margin-right=25px' href="{{ route('login') }}"><i class="fa fa-cog"></i></a>
+                            <a class="roue" href="{{ route('login') }}"><i class="fa fa-cog"></i></a>
 
                             @endauth
                         </div>
                         @endif
                     </div>
+                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            style="display: none;">
+                                            @csrf
+                                        </form>
                 </div>
             </div>
         </nav>
 
         <main class="py-4" style="padding: 0!important">
             @yield('content')
-        </main>
+        </main> 
+
+       
         <footer class="footer">
+           
             @include('layouts/footer')
         </footer>
     </div>

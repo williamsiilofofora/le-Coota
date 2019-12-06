@@ -25,7 +25,7 @@
                 <h6 class="">Style: {{$events->style}}</h6>
                 <p>Origine: {{$events->origine}}</p>
                 <p>Le {{ \Carbon\Carbon::parse($events->dateConcert)->locale('fr_FR')->format('d M Y')}}</p>
-                <p class="card-text">{{Str::limit($events->description,150)}}</p>
+                {{-- <p class="card-text">{{Str::limit($events->description,150)}}</p> --}}
             </div>
             <div class="card-footer">
                 <!-- Button trigger modal -->

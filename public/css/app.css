@@ -119,9 +119,162 @@ h1 {
   color: #3f3b3b;
 }
 
+#rgpd {
+  position: -webkit-sticky;
+  position: fixed;
+  top: 93vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+          align-items: center;
+  background: #2f2f2f;
+  color: #fff;
+  padding: 10px 15px;
+  width: 100%;
+  z-index: 100;
+}
+
+#rgpd .row {
+  margin: 0 !important;
+}
+
+#rgpd .cookie-alert {
+  position: -webkit-sticky;
+  position: fixed;
+  top: 93vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+          align-items: center;
+  background: #2f2f2f;
+  color: #fff;
+  padding: 10px 15px;
+  width: 100%;
+  z-index: 100;
+}
+
+#rgpd .cookie-alert a {
+  display: block;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 8px auto 0 auto;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid #46A2D9;
+  color: #46A2D9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#rgpd .cookie-alert a:hover {
+  background: #46A2D9;
+  color: #2f2f2f;
+}
+
+@media only screen and (max-width: 480px) {
+  .cookie-alert {
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 10px 30px;
+  }
+}
+
 #formcard {
-  min-height: 100vh;
-  margin-top: 50px;
+  margin: 30px 0 30px 30px;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+#formcard .formBox h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin: 30px 0 20px 0;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#formcard .formBox .inputBox {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+#formcard .formBox .inputBox .inputText {
+  position: absolute;
+  font-size: 15px;
+  line-height: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+#formcard .formBox .inputBox .input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#formcard .formBox .inputBox input[type=file] {
+  display: none;
+}
+
+#formcard .formBox .inputBox label {
+  background-color: #3490dc;
+  position: relative;
+  top: 65px;
+  color: white;
+  border-radius: 7px;
+  width: 100%;
+}
+
+#formcard .formBox .inputBox .custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#formcard .formBox .focus .inputText {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  font-size: 18px;
+  opacity: 1;
+  color: #07d400bd;
+}
+
+#formcard .formBox textarea {
+  height: 100px !important;
+}
+
+#formcard .formBox .button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #03A9F4;
+  color: #fff;
+}
+
+aside h1 {
+  color: white !important;
+  font-size: 3rem !important;
+}
+
+aside ul {
+  margin-left: 25px;
 }
 
 @media (min-width: 70em) {
@@ -548,6 +701,12 @@ iframe {
   top: 0;
   left: 0;
   z-index: 9999;
+}
+
+.roue {
+  margin: 0 25px;
+  font-size: 25px;
+  color: black;
 }
 
 .navbar {

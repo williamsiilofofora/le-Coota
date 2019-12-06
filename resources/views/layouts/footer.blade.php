@@ -30,9 +30,9 @@
                 <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
                 <!--headin5_amrc-->
                 <ul class="footer_ul_amrc">
-                    <li><a href="http://webenlance.com">Remove Background</a></li>
-                    <li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
-                    <li><a href="http://webenlance.com">Logo Design</a></li>
+                    <li><a href="{{ route('rgpd.index') }}">Mention Legal & Politique de confidentialité</a></li>
+                    <li><a href="http://webenlance.com">Le site</a></li>
+                    <li><a href="http://webenlance.com">Le developpeur</a></li>
                     <li><a href="http://webenlance.com">Vectorization</a></li>
                     <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
                     <li><a href="http://webenlance.com">Image Cropping</a></li>

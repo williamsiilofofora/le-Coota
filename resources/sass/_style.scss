@@ -10,9 +10,11 @@
 .visible {
     opacity: 1;
 }
-#app{
+
+#app {
     overflow-x: hidden;
 }
+
 .box {
     background-image: linear-gradient(rgb(207, 202, 207), rgb(211, 208, 211)),
         linear-gradient(rgb(138, 135, 138), rgb(107, 98, 107)),
@@ -26,6 +28,7 @@
     padding: 10px;
     margin: 30px;
 }
+
 h1 {
     font-family: "Twin-Marker",
         sans-serif;
@@ -33,12 +36,188 @@ h1 {
     color: $black;
 }
 
+// bandeauRGPD
+// body {
+//     top: 0;
+//     -moz-transition: top 0.35s ease-in-out;
+//     -webkit-transition: top 0.35s ease-in-out;
+//     -o-transition: top 0.35s ease-in-out;
+//     -ms-transition: top 0.35s ease-in-out;
+//     transition: top 0.35s ease-in-out;
+// }
 
+// #cookies-banner {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 9999;
+//     width: 100%;
+//     border-radius: 0;
+//     padding: 5px 10px;
+//     vertical-align: middle;
+//     margin: 0;
+// }
+#rgpd{
+       position: -webkit-sticky;
+       position: fixed;
+       top:93vh;
+       bottom: 0;
+       left:0;
+       right: 0;
+       align-items: center;
+       background: #2f2f2f;
+       color: #fff;
+       padding: 10px 15px;
+       width: 100%;
+       z-index: 100;
+    .row{
+        margin:0 !important;
+    }
+
+.cookie-alert {
+ 
+   position: -webkit-sticky;  
+    position: fixed;
+    top:93vh;
+    bottom: 0;
+    left:0;
+    right: 0;
+    align-items: center;
+    background: #2f2f2f;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    z-index: 100;
+}
+
+.cookie-alert a {
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 8px auto 0 auto;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #46A2D9;
+    color: #46A2D9;
+    transition: all .3s ease;
+    text-decoration: none;
+    &:hover {
+    background: #46A2D9;
+    color: #2f2f2f;
+}
+}
+}
+
+
+@media only screen and (max-width:480px) {
+    .cookie-alert {
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 10px 30px;
+    }
+}
 
 
 
 // dashboard
 #formcard {
-    min-height: 100vh;
-    margin-top: 50px;
+    // min-height: 100vh;
+    margin:30px 0 30px 30px;
+    border: 1px solid lightgray;
+    border-radius:25px;
+    padding:15px;
+   
+
+    .formBox {
+        
+        
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin: 30px 0 20px 0;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        .inputBox {
+            position: relative;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+
+            .inputText {
+                position: absolute;
+                font-size: 15px;
+                line-height: 50px;
+                transition: .5s;
+                opacity: .5;
+            }
+
+            .input {
+                position: relative;
+                width: 100%;
+                height: 50px;
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                border-bottom: 1px solid rgba(0, 0, 0, .5);
+            }
+            input[type="file"] {
+                display: none;
+            }
+            label{
+                background-color: #3490dc;
+                position: relative;
+                top: 65px;
+                color: white;
+                border-radius: 7px;
+                width: 100%;
+            }
+            .custom-file-upload {
+                border: 1px solid #ccc;
+                display: inline-block;
+                padding: 6px 12px;
+                cursor: pointer;
+            }
+
+
+        }
+
+        .focus .inputText {
+            transform: translateY(-30px);
+            font-size: 18px;
+            opacity: 1;
+            color: #07d400bd;
+
+        }
+
+        textarea {
+            height: 100px !important;
+        }
+
+        .button {
+            width: 100%;
+            height: 50px;
+            border: none;
+            outline: none;
+            background: #03A9F4;
+            color: #fff;
+        }
+    }
 }
+
+    aside {
+        h1 {
+            color: white !important;
+            font-size: 3rem !important;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+    }

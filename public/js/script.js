@@ -1,8 +1,8 @@
 $(document).ready(function () {
+    $(".input").focus(function () {
+        $(this).parent().addClass("focus");
+    });
 
-
-
-    //ancre
     $('#scrollDown').on('click', function (e) {
         e.preventDefault();
         $('html, body')
@@ -47,13 +47,13 @@ $(document).ready(function () {
                     break;
                 case "y":
                     year = parseInt(value);
-                     break;
+                    break;
                 case "H":
                     hours = parseInt(value) - 1;
-                break;
+                    break;
                 case "i":
                     minutes = parseInt(value);
-                break;
+                    break;
                 case "s":
                     seconds = parseInt(value);
             }
@@ -90,8 +90,11 @@ $(document).ready(function () {
         setTimeout(setDate, 1000);
     }
 
-// pagination
-$val = val.value;
-    echo ($val);
+      $('#rgpd').show(function () {
+        setTimeout(function () {
+            $('#rgpd').hide();
+        }, 20000);
+    });
+
 
 });
