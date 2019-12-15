@@ -14,9 +14,9 @@
             <div class="card-img"><img class="card-img-top image-fluid" src="{{ asset('images/interieur.jpg')}}"
                     alt="Card image cap"></div>
             <div class="card-body">
-                <h4 class="card-title">le coota</h4>
+                <h4 class="card-title">LE COOTA</h4>
                 <hr>
-                <h6 class=""></h6>
+                
             </div>
             <div class="card-footer">
                   <!-- Button trigger modal -->
@@ -31,7 +31,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
 
-                        <h5 class="modal-title">Le Coota</h5>
+                        <h5 class="modal-title">LE COOTA</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -63,9 +63,9 @@
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/erdeven.jpg')}}"
                     alt="Card image cap"></div>
             <div class="card-body">
-                <h4 class="card-title">le coin</h4>
+                <h4 class="card-title">LE COIN</h4>
                 <hr>
-                <h6 class=""></h6>
+                
 
             </div>
             <div class="card-footer">
@@ -81,7 +81,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
 
-                        <h5 class="modal-title">Le Coin</h5>
+                        <h5 class="modal-title">LE COIN</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -111,9 +111,9 @@
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/salsa.jpg')}}" alt="Card image cap">
             </div>
             <div class="card-body">
-                <h4 class="card-title">la salsa</h4>
+                <h4 class="card-title">LA SALSA</h4>
                 <hr>
-                <h6 class=""></h6>
+               
             </div>
             <div class="card-footer">
                 <!-- Button trigger modal -->
@@ -128,7 +128,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
 
-                        <h5 class="modal-title">Le salsa</h5>
+                        <h5 class="modal-title">LA SALSA</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -157,9 +157,9 @@
                     alt="Card image cap"></div>
 
             <div class="card-body">
-                <h4 class="card-title">Jam Session</h4>
+                <h4 class="card-title">JAM SESSION</h4>
                 <hr>
-                <h6 class=""></h6>
+        
             </div>
             <div class="card-footer">
                     <!-- Button trigger modal -->
@@ -174,7 +174,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
 
-                        <h5 class="modal-title">Jam Seesion</h5>
+                        <h5 class="modal-title">JAM SESSION</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -203,9 +203,9 @@
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/coctail.jpg')}}"
                     alt="Card image cap"></div>
             <div class="card-body">
-                <h4 class="card-title">Les cocktails</h4>
+                <h4 class="card-title">LES COKTAILS</h4>
                 <hr>
-                <h6 class=""></h6>
+                
             </div>
             <div class="card-footer">
                    <!-- Button trigger modal -->
@@ -220,7 +220,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
 
-                        <h5 class="modal-title">Les coktails</h5>
+                        <h5 class="modal-title">LES COKTAILS</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

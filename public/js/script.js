@@ -2,7 +2,17 @@ $(document).ready(function () {
     $(".input").focus(function () {
         $(this).parent().addClass("focus");
     });
+      $('#rgpd').show(function () {
+          setTimeout(function () {
+              $('#rgpd').hide();
+          }, 20000);
+      });
+      $('.toggleRGPD').on('click', function (e) {
+          e.preventDefault();
+          $('#rgpd')
+              .hide()
 
+      });
     $('#scrollDown').on('click', function (e) {
         e.preventDefault();
         $('html, body')
@@ -90,11 +100,9 @@ $(document).ready(function () {
         setTimeout(setDate, 1000);
     }
 
-      $('#rgpd').show(function () {
-        setTimeout(function () {
-            $('#rgpd').hide();
-        }, 20000);
-    });
+    
 
-
+    // $('#datetimepicker').datetimepicker(
+      
+    // );
 });

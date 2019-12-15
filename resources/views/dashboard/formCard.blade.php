@@ -18,17 +18,25 @@
                     <div class="col-sm-6">
                         <div class="inputBox ">
                             <div class="inputText">Nom du groupe</div>
-                            <input type="text" name="" class="input">
+                            <input type="text" name="title" class="input">
                         </div>
                     </div>
 
                     <div class="col-sm-6">
-                        <div class="inputBox">
-                            <div class="inputText">Date du concert</div>
-                            <input type="text" name="dateConcert" class="input">
+                        <div class="inputBox"id="datetimepicker">
+                            <div class="inputText" >Date du concert</div>
+                            <input type="text" name="dateConcert" class="input"><span class="fa fa-calendar">
+                            </span>
                             <span>Ex:2019-06-30 21:00:00</span>
                         </div>
                     </div>
+                    {{-- <div class='input-group date' id='datetimepicker'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="fa fa-calendar">
+                            </span>
+                        </span>
+                    </div> --}}
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
@@ -70,8 +78,8 @@
                     </div>
 
                     <div class="col-sm-6">
-                        <div class="inputBox" >
-                            <label for="file-upload" class="custom-file-upload"style="margin-bottom:30px;">
+                        <div class="inputBox">
+                            <label for="file-upload" class="custom-file-upload" style="margin-bottom:30px;">
                                 <i class="fa fa-cloud-upload"></i> Photo
                             </label>
                             <input id="file-upload" type="file" id="image" name="image" />

@@ -119,22 +119,6 @@ h1 {
   color: #3f3b3b;
 }
 
-#rgpd {
-  position: -webkit-sticky;
-  position: fixed;
-  top: 93vh;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-align: center;
-          align-items: center;
-  background: #2f2f2f;
-  color: #fff;
-  padding: 10px 15px;
-  width: 100%;
-  z-index: 100;
-}
-
 #rgpd .row {
   margin: 0 !important;
 }
@@ -266,6 +250,10 @@ h1 {
   outline: none;
   background: #03A9F4;
   color: #fff;
+}
+
+aside {
+  background-color: #2f2f2f;
 }
 
 aside h1 {
@@ -438,6 +426,11 @@ aside ul {
   width: 100%;
 }
 
+#about h4,
+#about h5 {
+  font-family: "impact";
+}
+
 #about .content {
   padding: 15px 0 12px 0;
 }
@@ -483,10 +476,6 @@ aside ul {
 #about .row .title {
   padding: 0 auto;
   text-align: center;
-}
-
-#about .row .title h2 {
-  font-family: "Twin-Marker" !important;
 }
 
 #about .modal img {
@@ -735,7 +724,7 @@ iframe {
 
 .menu li a {
   text-decoration: none;
-  color: #3f3b3b;
+  color: #2f2f2f;
 }
 
 .reseau {
@@ -755,7 +744,7 @@ iframe {
 
 .reseau li a {
   text-decoration: none;
-  color: #3f3b3b;
+  color: #2f2f2f;
 }
 
 #cadeaux {
@@ -805,7 +794,7 @@ iframe {
 
 footer {
   width: 100%;
-  background-color: #263238;
+  background-color: #2f2f2f;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
 }
@@ -884,7 +873,7 @@ footer .footer_ul2_amrc li i {
 }
 
 footer .bottom_border {
-  border-bottom: 1px solid #323f45;
+  border-bottom: 1px solid #d6d6d1;
   padding-bottom: 20px;
 }
 
@@ -936,7 +925,7 @@ footer .social_footer_ul li a {
 }
 
 footer .social_footer_ul li a:hover {
-  color: #263238;
+  color: #2f2f2f;
   background-color: #CCC;
 }
 
