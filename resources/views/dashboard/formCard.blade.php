@@ -1,13 +1,18 @@
-<div class="container-fluid">
+@extends('layouts.dashBoardNav')
+
+@section('content')
+
+
+<div class="container-fluid" >
     @if (session('status'))
     <div class="message status">
         {{ session('status') }}
     </div>
     @endif
-    <div class="container">
+    <div class="container formcard">
 
-        <div class="formBox col-10">
-            <form class="" method="POST" action="" enctype="multipart/form-data" novalidate>
+        <div class="formBox">
+            <form class="" method="POST" action="{{ route('event.store') }}" enctype="multipart/form-data" novalidate>
                 <div class="row">
                     <div class="col-sm-12">
                         <h2>Poster un nouvel evenement</h2>
@@ -23,20 +28,13 @@
                     </div>
 
                     <div class="col-sm-6">
-                        <div class="inputBox"id="datetimepicker">
-                            <div class="inputText" >Date du concert</div>
-                            <input type="text" name="dateConcert" class="input"><span class="fa fa-calendar">
+                        <div class="inputBox">
+                            <div class="" >Date du concert</div>
+                            <input type="datetime" name="dateConcert" class="input" value="2020-06-30 21:00:00"><span class="fa fa-calendar">
                             </span>
                             <span>Ex:2019-06-30 21:00:00</span>
                         </div>
                     </div>
-                    {{-- <div class='input-group date' id='datetimepicker'>
-                        <input type='text' class="form-control" />
-                        <span class="input-group-addon">
-                            <span class="fa fa-calendar">
-                            </span>
-                        </span>
-                    </div> --}}
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
@@ -88,9 +86,10 @@
                 </div>
 
                 <div class="col form-group col-3">
-                    <input class="btn btn-primary" type="submit" value="Publier">
+                    <input class="btn btn-success" type="submit" value="Publier">
                 </div>
             </form>
         </div>
     </div>
 </div>
+@endsection

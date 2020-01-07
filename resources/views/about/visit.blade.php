@@ -1,5 +1,5 @@
 <div class='visite'>
-    <div class=" col-5 col-sm-4 col-md-4 col-lg-2 col-xl-2 mx-auto box">
+    <div class=" col-8 col-sm-4 col-md-4 col-lg-2 col-xl-2 mx-auto box">
         <h2>La visite</h2>
 
     </div>

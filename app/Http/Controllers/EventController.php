@@ -64,7 +64,7 @@ class EventController extends Controller
 
         $event->save();
 
-        return redirect()->route('accueil.index', [$event->id]);
+        return redirect()->route('dashboard.index');
     }
 
     /**
@@ -75,7 +75,7 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        //
+       
     }
 
     /**
@@ -84,9 +84,11 @@ class EventController extends Controller
      * @param  \App\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event)
+    public function edit($id)
     {
-        //
+        
+        $event = Event::find($id);
+        return view('evenement.edit', compact('event'));
     }
 
     /**
@@ -96,9 +98,31 @@ class EventController extends Controller
      * @param  \App\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event)
+    public function update(Request $request,$id)
     {
-        //
+        
+        $event = Event::find($id);
+        $event->id = $id;
+        $event->title = $request->title;
+        $event->style = $request->style;
+        $event->description = $request->description;
+        $event->dateConcert = $request->dateConcert;
+        $event->origine = $request->origine;
+        $event->lienFB = $request->lienFB;
+        $event->lienUT = $request->lienUT;
+        $event->image = $request->image;
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $path = 'images/concert/';
+            Image::make($image)->save(public_path($path . $filename));
+            // Save thumb
+            $pathThumb = 'images/thumb/';
+            Image::make($image)->widen(500)->encode()->save(public_path($pathThumb . $filename));
+            $event->image = $filename;
+        }
+        $event->update();
+        return redirect()->route('dashboard.index');
     }
 
     /**
@@ -107,11 +131,11 @@ class EventController extends Controller
      * @param  \App\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event)
+    public function destroy($id)
     {
-        $event = new Event;
-        $event->destroy($event);
+        $event =  Event::findOrFail($id);
+        $event->destroy($id);
 
-        return back();
+        return redirect()->route('dashboard.index');
     }
 }

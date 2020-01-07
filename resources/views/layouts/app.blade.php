@@ -7,9 +7,14 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>Le COOTA</title>
-
+    <meta name="author" content="Williams KUBIAK">
+    {{-- TODO remplir meta description --}}
+    <meta name="description" content="Bar,café concert,zone de convivialité" lang="fr">
+    <meta name="keywords" content="Bar,café concert,zone de convivialité,ouvert 7/7,Erdeven,Etel, Auray,Lorient,56,56410">
+    <meta name="language" content="fr">
+    <meta name="robots" content="index, follow">
+    <title>LE COOTA</title>
+    <link rel="canonical" href="http://www.Le-coota.fr/" />
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -25,7 +30,7 @@
 <body>
     <div id="app">
         <div id="rgpd">
-        @include('RGPD.bandeauRGPD')</div>
+            @include('RGPD.bandeauRGPD')</div>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm main-menu fixed-top">
             <div class="container-fluid " id="bandeau" style="width:100%;">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -53,7 +58,7 @@
                             <a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw"
                                 class="fa fa-youtube"></a>
                         </li>
-                        
+
                     </ul>
                     <ul class="menu navbar-nav ml-auto">
                         @guest
@@ -88,11 +93,11 @@
                         @if (Route::has('login'))
                         <div class="top-right links">
                             @auth
-                          <a class="nav-link roue" href="{{ route('logout') }}" onclick="event.preventDefault();
+                            <a class="nav-link roue" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                                 document.getElementById('logout-form').submit();">
-                                           <i class="fa fa-cog"></i>
-                                        </a>
-                        
+                                <i class="fa fa-cog"></i>
+                            </a>
+
                             @else
                             <a class="roue" href="{{ route('login') }}"><i class="fa fa-cog"></i></a>
 
@@ -100,21 +105,20 @@
                         </div>
                         @endif
                     </div>
-                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                            style="display: none;">
-                                            @csrf
-                                        </form>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                 </div>
             </div>
         </nav>
 
         <main class="py-4" style="padding: 0!important">
             @yield('content')
-        </main> 
+        </main>
 
-       
+
         <footer class="footer">
-           
+
             @include('layouts/footer')
         </footer>
     </div>
@@ -123,4 +127,5 @@
 <script src={{asset('js/jquery.viewportchecker.js')}} defer></script>
 
 {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> --}}
+
 </html>

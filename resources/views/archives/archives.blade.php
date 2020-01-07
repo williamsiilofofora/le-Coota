@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-4">
                         <form action="/search" method="GET">
-                            {{ csrf_field() }}
+                            @csrf
                             <div class="input-group">
                                 <span class="input-group-prepend"><button type="submit" class="btn btn-primary"><i
                                             class="fa fa-search"></i></button></span>
@@ -75,7 +75,7 @@
             </table>
            
             <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                {{-- <div class="hint-text">Showing <b>5</b> out of <b>10</b> entries</div> --}}
                 <div> {{$eventArchives->links()}}</div> 
             </div>
         </div>

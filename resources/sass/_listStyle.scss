@@ -2,32 +2,33 @@
     @include breakpoint(desktop) {
         width: 90vw;
     }
-    
-    tbody{
-        td{
-            vertical-align:middle ;
-            a{
-               
-        border-radius: 50%;
-        background-color: rgb(0, 132, 255);
-        color: white;
-        width: 30px;
-        height: 30px;
-        padding: 7px;
-        
-   }
-            
+
+    tbody {
+        td {
+            vertical-align: middle;
+
+            a {
+
+                border-radius: 50%;
+                background-color: rgb(0, 132, 255);
+                color: white;
+                width: 30px;
+                height: 30px;
+                padding: 7px;
+
+            }
+
             &:hover {
                 background: #d6d4d4;
                 text-decoration: none;
-               
+
             }
         }
 
-        .circle{
+        .circle {
             width: 50px;
             height: 50px;
-            border-radius:50%;
+            border-radius: 50%;
         }
 
     }

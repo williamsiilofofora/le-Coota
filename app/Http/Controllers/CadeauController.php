@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Event;
 use App\Cadeau;
-use Illuminate\Http\Request;
 use Carbon\Carbon;
-class AccueilController extends Controller
+use Illuminate\Http\Request;
+
+class CadeauController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,16 +16,8 @@ class AccueilController extends Controller
     public function index()
     {
         $dateToday = Carbon::now();
-        $cadeau = Cadeau::orderBy('dateCadeaux', 'asc')->where('dateCadeaux', '>=', $dateToday)->take(1)->get();
-        $lastEvent = Event::orderBy('dateConcert', 'asc')->where('dateConcert', '>=', $dateToday)->take(1)->get();
-        $event = Event::orderBy('dateConcert', 'asc')->where('dateConcert','>=',$dateToday)->take(6)->get();
-        $randNumber1 = rand(1, 27);
-        $randNumber2 = rand(1, 27);
-        $randNumber3 = rand(1, 27);
-        $cootaImg1=  "coota".($randNumber1).".jpeg";
-        $cootaImg2 =  "coota" . ($randNumber2) . ".jpeg";
-        $cootaImg3 =  "coota" . ($randNumber3) . ".jpeg";
-        return view('accueil', compact('cootaImg1','cootaImg2','cootaImg3','event','dateToday','lastEvent','cadeau'));
+        $cadeau = Cadeau::orderBy('dateCadeaux', 'desc')->where('dateCadeaux', '>=', $dateToday)->take(1)->get();
+        return view('cadeaux.cadeaux', compact('cadeau'));
     }
 
     /**
@@ -35,7 +27,7 @@ class AccueilController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.FormCadeau');
     }
 
     /**
@@ -46,7 +38,14 @@ class AccueilController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cadeau = new Cadeau;
+        $cadeau->title = $request->title;
+        $cadeau->descriptionCadeaux = $request->descriptionCadeaux;
+        $cadeau->dateCadeaux = $request->dateCadeaux;
+        $cadeau->lien = $request->lien;
+        $cadeau->save();
+
+        return redirect()->route('dashboard.index');
     }
 
     /**
@@ -57,8 +56,7 @@ class AccueilController extends Controller
      */
     public function show($id)
     {
-        $modal = Event::findOrFail($id);
-        return view('accueil',  compact('modal')); 
+        //
     }
 
     /**
@@ -69,7 +67,8 @@ class AccueilController extends Controller
      */
     public function edit($id)
     {
-        //
+        $cadeau = Cadeau::find($id);
+        return view('cadeaux.edit', compact('cadeau'));
     }
 
     /**
@@ -81,7 +80,14 @@ class AccueilController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $cadeau = Cadeau::find($id);
+        $cadeau->id =$id;
+        $cadeau->title = $request->title;
+        $cadeau->descriptionCadeaux = $request->descriptionCadeaux;
+        $cadeau->dateCadeaux = $request->dateCadeaux;
+        $cadeau->lien = $request->lien;
+        $cadeau->update();
+        return redirect()->route('accueil.index', [$cadeau->id]);
     }
 
     /**
@@ -92,6 +98,9 @@ class AccueilController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $cadeau = Cadeau::findOrFail($id);
+        $cadeau->destroy($id);
+
+        return redirect()->route('dashboard.index');
     }
 }

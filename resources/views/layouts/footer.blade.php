@@ -5,17 +5,16 @@
             <div class=" col-sm-4 col-md col-sm-4  col-12 col">
                 <h5 class="headin5_amrc col_white_amrc pt2">Le Coota</h5>
                 <!--headin5_amrc-->
-                <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s</p>
-                <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
-                <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+                <p class="mb10">Le Coota bar, café/concert et zone de convivialitée depuis 2008 à Erdeven, salsa, coktails, session jam au milieu des dunes et des menhirs</p>
+                <p><i class="fa fa-location-arrow"></i>ZAC de Kerhillio, 56410 Erdeven</p>
+                <p><i class="fa fa-phone"></i> 02 97 55 92 55 </p>
                 <p><i class="fa fa fa-envelope"></i> info@example.com </p>
 
 
             </div>
 
 
-            <div class=" col-sm-6 col-md  col-10 col">
+            <div class=" col-sm-6 col-md  col-8 col">
                 <h5 class="headin5_amrc col_white_amrc pt2">ou nous trouver ?</h5>
                 <!--headin5_amrc-->
                 <iframe
@@ -31,23 +30,20 @@
                 <!--headin5_amrc-->
                 <ul class="footer_ul_amrc">
                     <li><a href="{{ route('rgpd.index') }}">Mention Legal & Politique de confidentialité</a></li>
-                    <li><a href="http://webenlance.com">Le site</a></li>
-                    <li><a href="http://webenlance.com">Le developpeur</a></li>
-                    <li><a href="http://webenlance.com">Vectorization</a></li>
-                    <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-                    <li><a href="http://webenlance.com">Image Cropping</a></li>
+                    <li><a href="#">Le site</a></li>
+                    <li><a href="#">Le developpeur</a></li>
                 </ul>
                 <!--footer_ul_amrc ends here-->
             </div>
 
 
-            <div class=" col-sm-4 col-md  col-12 col">
+            {{-- <div class=" col-sm-4 col-md  col-12 col">
                 <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
                 <!--headin5_amrc ends here-->
 
                 <ul class="footer_ul2_amrc">
                     <li><a href="#"><i class="fa fa-twitter fleft padding-right"></i> </a>
-                        <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
+                        <p>Lorem Ipsum is simply dummy text of the printing...<a href="https://goo.gl/maps/DgLgLZ5Wqa2dEuRA8">https://goo.gl/maps/DgLgLZ5Wqa2dEuRA8</a>
                         </p>
                     </li>
                     <li><a href="#"><i class="fa fa-twitter fleft padding-right"></i> </a>
@@ -60,7 +56,7 @@
                     </li>
                 </ul>
                 <!--footer_ul2_amrc ends here-->
-            </div>
+            </div> --}}
         </div>
     </div>
 

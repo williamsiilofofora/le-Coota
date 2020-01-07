@@ -2,7 +2,12 @@
 #archive {
     margin-top: 90px;
     // text-align: center;
-
+    .col-4{
+        margin-bottom: 4px;
+    }
+    a.fa{
+        padding-left: 9px;
+    }
     .headerArchives {
         height: 400px;
         overflow: hidden;

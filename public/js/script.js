@@ -100,9 +100,4 @@ $(document).ready(function () {
         setTimeout(setDate, 1000);
     }
 
-    
-
-    // $('#datetimepicker').datetimepicker(
-      
-    // );
 });

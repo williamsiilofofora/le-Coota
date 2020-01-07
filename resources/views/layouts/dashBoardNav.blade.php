@@ -24,33 +24,21 @@
 
 <body>
     <div id="app">
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <aside class="col-12 col-md-2 p-0">
-                    <nav class="navbar navbar-expand navbar-dark flex-md-column flex-row align-items-start">
-                        <div class="collapse navbar-collapse" id="">
-                            <ul class="menu flex-md-column flex-row navbar-nav w-100 justify-content-between">
-                                <li class="nav-item">
-                                    <a class="navbar-brand" href="{{ url('/') }}">
+        <div class="container-fluid ">
+            <div class=" ">
+                <aside class="col-12">
+                    <nav class="nav navbar navbar-expand navbar-dark">
+                        <div class="collapse navbar-collapse" id=""> 
+                            <a class="navbar-brand" href="{{ url('/') }}">
                                         <h1>LE COOTA</h1>
-                                    </a></li>
+                            </a>
+                            <ul class="menu flex-row navbar-nav w-100">
+                                
                                 <li class="nav-item"><a class="nav-link pl-0"
                                         href="{{route('accueil.index')}}">Accueil</a></li>
-                                <li class="nav-item"><a class="nav-link pl-0" href="">Les Evenements</a></li>
-                                <li class="nav-item"><a class="nav-link pl-0" href="">Les Médias</a></li>
-                                <li class="nav-item"><a class="nav-link pl-0" href="{{route('register')}}">register</a>
-                                </li>
                                 <li class="nav-item"><a class="nav-link pl-0"
                                         href="{{route('dashboard.index')}}">dashboard</a></li>
-                                @if (Route::has('login'))
-                                <li class="top-right links">
-                                    @auth
-                                    <a href="{{ url('/home') }}">Home</a>
-                                    @else
-                                    <a href="{{ route('login') }}">Login</a>
-                                    @endauth
-                                </li>
-                                @endif
+                               
                             </ul>
                         </div>
                     </nav>
@@ -66,5 +54,4 @@
     </div>
 </body>
 <script src={{asset('js/script.js')}} defer></script>
-
 </html>

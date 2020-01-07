@@ -1,21 +1,24 @@
 // evenement
+
+
 #event,
-#concert {
-    padding: 30px;
+#concert,
+.dash {
+    // padding: 30px;
     min-height: 100vh;
-    background-color: whitesmoke;
+    background-image: url("/images/oldWall.jpg");
+// background-color:$lightgrey;
     text-align: center;
-
-    .fa {
-        border-radius: 50%;
-        background-color: red;
-        color: white;
-        width: 30px;
-        height: 30px;
-        padding: 7px;
-        margin: 15px 10px;
-    }
-
+     .res {
+         border-radius: 50%;
+         background-color: red;
+         color: white;
+         width: 30px;
+         height: 30px;
+         padding: 7px;
+         margin: 15px 10px;
+     }
+     
     .event {
         @include breakpoint(desktop) {
             flex: 0 0 30%;
@@ -25,7 +28,7 @@
 
 
     }
-
+    
     .lastEvent {
         background-repeat: no-repeat;
         background-size: cover;
@@ -136,11 +139,18 @@
         box-shadow: 5px 5px 10px gray;
         padding-top: 13px;
         border-radius: 25px;
-
+        h4{
+            font-weight: bolder;
+            margin-top: 5px;
+        }
         button {
             background-color: $red;
         }
-
+        .card-body{
+            @include breakpoint(mobileonly) {
+                padding:0;
+            }
+        }
         .card-img {
             max-height: 220px;
             overflow: hidden;

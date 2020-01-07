@@ -14,7 +14,11 @@
 #app {
     overflow-x: hidden;
 }
-
+.circle{
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+}
 .box {
     background-image: linear-gradient(rgb(207, 202, 207), rgb(211, 208, 211)),
         linear-gradient(rgb(138, 135, 138), rgb(107, 98, 107)),
@@ -34,6 +38,7 @@ h1 {
         sans-serif;
     font-size: 55px;
     color: $black;
+    
 }
 
 // bandeauRGPD
@@ -94,13 +99,13 @@ h1 {
 
 
 // dashboard
-#formcard {
-    // min-height: 100vh;
+.formcard {
+    
     margin: 30px 0 30px 30px;
     border: 1px solid lightgray;
     border-radius: 25px;
     padding: 15px;
-
+    min-width: 60wh;
 
     .formBox {
 
@@ -144,7 +149,7 @@ h1 {
             }
 
             label {
-                background-color: #3490dc;
+                background-color: $green;
                 position: relative;
                 top: 65px;
                 color: white;
@@ -179,7 +184,7 @@ h1 {
             height: 50px;
             border: none;
             outline: none;
-            background: #03A9F4;
+            background: rgb(3, 244, 83);
             color: #fff;
         }
     }
@@ -187,6 +192,7 @@ h1 {
 
 aside {
     background-color: $darkgrey;
+    justify-content: space-between;
     h1 {
         color: white !important;
         font-size: 3rem !important;
@@ -194,5 +200,15 @@ aside {
 
     ul {
         margin-left: 25px;
+        float: right;
     }
+}
+.error404{
+    
+        min-height: 52vh;
+        color: black;
+        text-align: center;
+        align-items: center;
+        display: flex;
+
 }

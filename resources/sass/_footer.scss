@@ -46,13 +46,13 @@ footer {
         a {
             color: #CCC;
 
-        
 
-        &:hover {
-            color: #fff;
-            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
         }
-    }
     }
 
     .fleft {
@@ -105,13 +105,13 @@ footer {
             a {
                 color: #999;
                 margin: 0 12px;
-           
 
-            &:hover {
-                color: #fff;
-                text-decoration: none;
-            } 
-        }
+
+                &:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
 
         }
 
@@ -139,8 +139,9 @@ footer {
                 border: 1px solid #CCC;
                 padding: 8px;
                 border-radius: 50%;
-                &:hover{
-                    color:$darkgrey;
+
+                &:hover {
+                    color: $darkgrey;
                     background-color: #CCC;
                 }
             }
