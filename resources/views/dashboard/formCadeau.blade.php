@@ -9,7 +9,6 @@
         {{ session('status') }}
     </div>
     @endif
-    <div class="container formcard">
         <div class="formBox">
             <form method="POST" action="{{ route('cadeau.store') }}" enctype="multipart/form-data" novalidate>
                 <div class="row">

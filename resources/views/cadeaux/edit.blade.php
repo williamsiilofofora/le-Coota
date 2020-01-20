@@ -6,15 +6,17 @@
 
 
 
-<div class="container formCard">
+    <div class="container formcard formcadeau edit">
+<div class=" ">
     <div class="formBox">
-        <form method="POST" action="" enctype="multipart/form-data" novalidate>
+        <form method="POST" action="{{route('cadeau.update',$cadeau->id)}}" enctype="multipart/form-data" novalidate>
             <div class="row">
                 <div class="col-sm-12">
                     <h2>Editer cadeau</h2>
                 </div>
             </div>
             @csrf
+            @method('PUT')
             <div class="row">
                 <div class="col-sm-6">
                     <div class="inputBox ">
@@ -59,5 +61,5 @@
             <input class="btn btn-primary" type="submit" value="Publier">
         </form>
     </div>
-</div>
+</div></div>
 @endsection

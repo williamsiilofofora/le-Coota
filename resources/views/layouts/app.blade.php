@@ -10,11 +10,24 @@
     <meta name="author" content="Williams KUBIAK">
     {{-- TODO remplir meta description --}}
     <meta name="description" content="Bar,café concert,zone de convivialité" lang="fr">
-    <meta name="keywords" content="Bar,café concert,zone de convivialité,ouvert 7/7,Erdeven,Etel, Auray,Lorient,56,56410">
+    <meta name="keywords"
+        content="Bar,café concert,zone de convivialité,ouvert 7/7,Bretagne,Erdeven,Etel,Auray,Lorient,56,56410">
     <meta name="language" content="fr">
     <meta name="robots" content="index, follow">
-    <title>LE COOTA</title>
+    <meta name="distribution" content="global">
+    <meta name="author" content="williams KUBIAK">
+    <meta name="copyright" content="Lez'Arts du web">
+    <meta name="abstract"
+        content="Ce site presente le bar Le COOTA, les activités qu'il propose et les concerts à venir">
+    <title>Bar,café/concert et zone de convivialité</title>
     <link rel="canonical" href="http://www.Le-coota.fr/" />
+    <meta property="og:title" content="Le COOTA bar/concert" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="lecoota.fr" />
+    <meta property="og:url" content="https://lecoota.fr/" />
+    <meta property="og:description" content="Bar, café/concert et zone de convivialitée à Erdeven">
+    {{-- <meta property="og:image" content="" /> --}}
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 

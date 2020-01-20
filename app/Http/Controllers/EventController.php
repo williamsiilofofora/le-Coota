@@ -17,7 +17,7 @@ class EventController extends Controller
     public function index()
     {
         $dateToday = Carbon::now();
-        $event = Event::orderBy('dateConcert', 'desc')->where('dateConcert','>=', $dateToday)->paginate(6);
+        $event = Event::orderBy('dateConcert', 'asc')->where('dateConcert','>=', $dateToday)->paginate(6);
         return view('evenement.event', compact('event'));
     }
 

@@ -1,4 +1,4 @@
-@extends('layouts.dashBoardNav')
+@extends('layouts.app')
 
 @section('content')
 

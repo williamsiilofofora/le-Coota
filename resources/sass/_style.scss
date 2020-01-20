@@ -105,7 +105,7 @@ h1 {
     border: 1px solid lightgray;
     border-radius: 25px;
     padding: 15px;
-    min-width: 60wh;
+    // min-height: 60vh;
 
     .formBox {
 
@@ -167,7 +167,8 @@ h1 {
 
         }
 
-        .focus .inputText {
+        .focus .inputText
+         {
             transform: translateY(-30px);
             font-size: 18px;
             opacity: 1;
@@ -189,7 +190,9 @@ h1 {
         }
     }
 }
-
+.formcadeau{
+    min-height:45vh;
+}
 aside {
     background-color: $darkgrey;
     justify-content: space-between;

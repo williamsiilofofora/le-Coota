@@ -5,7 +5,6 @@
     border-bottom: 3px solid;
     border-image-source: linear-gradient(to top, black, orangered);
     overflow: hidden;
-    
 
     //   @include breakpoint(tablet) {
     //       height: 400px;
@@ -14,8 +13,6 @@
     //   @include breakpoint(laptop) {
     //       height: 700px;
     //   }
-
-     
 }
 
 .background::after {
@@ -26,7 +23,6 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 // @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -49,7 +45,6 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-
     z-index: 100 !important;
 }
 
@@ -62,9 +57,7 @@
     transform: translateX(-50%);
     cursor: pointer;
     margin-bottom: 80px;
-
 }
-
 
 .slide-down .line {
     width: 40px;
@@ -84,12 +77,11 @@
     }
 }
 
-
 .carousel-caption {
     text-align: center;
     // align-content: center;
     max-height: 100vh;
-    top: 25%;
+    top: 22%;
     bottom: auto;
 
     .content {
@@ -98,19 +90,18 @@
 
         h2 {
             z-index: 1;
-            color:$red;
+            color: $red;
             margin-bottom: 0;
             font-weight: 600;
             display: inline-block;
             font-family: "Twin-Marker" !important;
-         
+
             @include breakpoint(tablet) {
                 font-size: 50px;
             }
             @include breakpoint(laptop) {
                 font-size: 120px;
             }
-
         }
 
         img {
@@ -136,25 +127,23 @@
     font-size: 40px;
     font-family: "Twin-Marker" !important;
     color: #ffffff;
-     @include breakpoint(mobileonly) {
-        font-size: 1.50rem;
-     }
-
+    @include breakpoint(mobileonly) {
+        font-size: 1.5rem;
+    }
 }
 
 .bg {
-
     width: 100%;
     background-position-x: center;
     position: relative;
-    top:80px;
+    top: 80px;
     z-index: 1;
     padding: 0 0px;
     // overflow: hidden;
-     @include breakpoint(desktop) {
-         height: 99vh;
-     }
-       @include breakpoint(mobileonly) {
-           height: 280px;
-       }
+    @include breakpoint(desktop) {
+        height: 99vh;
+    }
+    @include breakpoint(mobileonly) {
+        height: 280px;
+    }
 }

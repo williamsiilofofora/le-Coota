@@ -20,7 +20,7 @@
             </div>
             <div class="card-footer">
                   <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalLeCoota" >
+                <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalLeCoota" >
                     voir plus
                 </button>
             </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="card-footer">
                     <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalLeCoin" >
+                <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalLeCoin" >
                     voir plus
                 </button>
             </div>
@@ -117,7 +117,7 @@
             </div>
             <div class="card-footer">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalSalsa" >
+                <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalSalsa" >
                     voir plus
                 </button>
             </div>
@@ -163,7 +163,7 @@
             </div>
             <div class="card-footer">
                     <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalJamSession" >
+                <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalJamSession" >
                     voir plus
                 </button>
             </div>
@@ -209,7 +209,7 @@
             </div>
             <div class="card-footer">
                    <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalCoktail" >
+                <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalCoktail" >
                     voir plus
                 </button>
             </div>
