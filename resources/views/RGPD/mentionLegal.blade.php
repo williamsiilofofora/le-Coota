@@ -41,7 +41,7 @@
         représentée par M Samuel RENAULT, en sa qualité de Gérant</br>
         immatriculée au RCS de ERDEVEN 503 978 157</br>
         n° de téléphone: 02 97 55 92 55</br>
-        adresse mail:<a href="will@hotmail.com"> will@hotmail.com</a></p>
+        adresse mail:<a href="sam@lecoota.fr"> sam@lecoota.fr</a></p>
 
     <h4>1.3 Hébergeur:</h4>
     <p><a href="https://lecoota.fr ">https://lecoota.fr</a> est hégérgé par OVH, dont le siège est situé 2 rue
@@ -168,7 +168,7 @@
     <p>Vous pouvez exercer ce droit en nous contactant, à l'adresse suivante:<br>
         LE COOTA ,12 B ZAC DE KERHILLIO 56410 ERDEVEN<br>
         Ou par email, à l'adresse:
-        <a href="will@hotmail.com">will@hotmail.com</a>
+        <a href="sam@lecoota.fr">sam@lecoota.fr</a>
         Vous pouvez aussi vous adresser à notre délégué à la prottection des données: Williams Kubiak,<a
             href="williams.kubiakpro@gmail.com">williams.kubiakpro@gmail.com</a>
         , qui est a votre disposition pour toute question relative à la protection de vos
@@ -248,11 +248,11 @@
 
     <h3>Article 12-Offres commerciales</h3>
     <p>Vous êtes susceptible de recevoir des offres commerciales de l'éditeur. Si vous ne le souhaitez pas,
-        veuillez cliquer sur le lien suivant: <a href="will@hotmail.com">will@hotmail.com</a>
+        veuillez cliquer sur le lien suivant: <a href="sam@lecoota.fr">sam@lecoota.fr</a>
         Vos données sont susceptibles d’être utilisées par les partenaires de l'éditeur à des fins de prospection
         commerciale,
         si vous ne le souhaitez pas, veuillez cliquer sur le lien suivant: <a
-            href="will@hotmail.com">will@hotmail.com</a>
+            href="sam@lecoota.fr">sam@lecoota.fr</a>
         Si, lors de la consultation du site, vous accédez à des données à caractère personnel, vous devez vous abstenir
         de
         toute
@@ -326,6 +326,6 @@
     <h3>Article 16-Contactez-nous</h3>
     <p>Pour toute question, information sur les produits présentés sur le site, ou concernat le site lui-même, vous
         pouvez
-        laisser un message à l'adresse suivante: will@hotmail.com</p>
+        laisser un message à l'adresse suivante: sam@lecoota.fr</p>
 </div>
 @endsection

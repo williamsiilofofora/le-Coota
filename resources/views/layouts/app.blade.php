@@ -19,7 +19,7 @@
     <meta name="copyright" content="Lez'Arts du web">
     <meta name="abstract"
         content="Ce site presente le bar Le COOTA, les activités qu'il propose et les concerts à venir">
-    <title>Bar,café/concert et zone de convivialité</title>
+    <title>Le Coota -café/concert et zone de convivialité-</title>
     <link rel="canonical" href="http://www.Le-coota.fr/" />
     <meta property="og:title" content="Le COOTA bar/concert" />
     <meta property="og:type" content="website" />
@@ -62,13 +62,13 @@
                     </ul>
                     <ul class="reseau  flex-row navbar-nav ml-auto">
                         <li class="nav-item col-1">
-                            <a href="https://www.facebook.com/Le-Coota-215139838515726/" class="fa fa-facebook"></a>
+                            <a href="https://www.facebook.com/Le-Coota-215139838515726/"  target="_blank" class="fa fa-facebook"></a>
                         </li>
                         <li class="nav-item col-1">
-                            <a href="https://www.flickr.com/photos/lecoota" class="fa fa-flickr"></a>
+                            <a href="https://www.flickr.com/photos/lecoota" target="_blank" class="fa fa-flickr"></a>
                         </li>
                         <li class="nav-item col-1">
-                            <a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw"
+                            <a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw" target="_blank"
                                 class="fa fa-youtube"></a>
                         </li>
 
@@ -110,10 +110,8 @@
                                                                 document.getElementById('logout-form').submit();">
                                 <i class="fa fa-cog"></i>
                             </a>
-
                             @else
                             <a class="roue" href="{{ route('login') }}"><i class="fa fa-cog"></i></a>
-
                             @endauth
                         </div>
                         @endif
@@ -131,14 +129,10 @@
 
 
         <footer class="footer">
-
             @include('layouts/footer')
         </footer>
     </div>
 </body>
 <script src={{asset('js/script.js')}} defer></script>
 <script src={{asset('js/jquery.viewportchecker.js')}} defer></script>
-
-{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> --}}
-
 </html>

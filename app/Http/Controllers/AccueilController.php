@@ -19,9 +19,9 @@ class AccueilController extends Controller
         $cadeau = Cadeau::orderBy('dateCadeaux', 'asc')->where('dateCadeaux', '>=', $dateToday)->take(1)->get();
         $lastEvent = Event::orderBy('dateConcert', 'asc')->where('dateConcert', '>=', $dateToday)->take(1)->get();
         $event = Event::orderBy('dateConcert', 'asc')->where('dateConcert','>=',$dateToday)->take(6)->get();
-        $randNumber1 = rand(1, 27);
-        $randNumber2 = rand(1, 27);
-        $randNumber3 = rand(1, 27);
+        $randNumber1 = rand(1, 50);
+        $randNumber2 = rand(1, 50);
+        $randNumber3 = rand(1, 50);
         $cootaImg1=  "coota".($randNumber1).".jpeg";
         $cootaImg2 =  "coota" . ($randNumber2) . ".jpeg";
         $cootaImg3 =  "coota" . ($randNumber3) . ".jpeg";
