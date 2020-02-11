@@ -160,7 +160,7 @@
         </div>
 
         <div class="card col-10 col-sm-8 col-lg-5 col-xl-2  ">
-            <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/jamsession.jpg')}}"
+            <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/instru.jpg')}}"
                     alt="Card image cap"></div>
 
             <div class="card-body">
@@ -188,7 +188,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <img class="image-fluid" src="{{asset('images/jamsession.jpg')}}" alt="Card image cap"><br>
+                        <img class="image-fluid" src="{{asset('images/instru.jpg')}}" alt="Card image cap"><br>
 
                         <p class="card-text">
                             C’est au Yucatan de Saint Gervais (haute Savoie) que j’ai découvert les jam session dans un

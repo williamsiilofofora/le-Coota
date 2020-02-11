@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="container-fluid ">
+<div class="container formcard">
     @if (session('status'))
     <div class="message status">
         {{ session('status') }}
