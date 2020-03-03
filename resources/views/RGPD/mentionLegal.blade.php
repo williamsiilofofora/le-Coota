@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class='container' style="padding:50px;">
+<div class='container' style="padding:50px;margin-top:100px">
 
 
     <h2>Mentions légales et politique de confidentialité</h2>

@@ -27,7 +27,7 @@ class CadeauController extends Controller
      */
     public function create()
     {
-        return view('dashboard.FormCadeau');
+        return view('dashboard.formCadeau');
     }
 
     /**

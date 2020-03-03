@@ -28,7 +28,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('dashboard.FormCard');
+        return view('dashboard.formCard');
     }
 
     /**
