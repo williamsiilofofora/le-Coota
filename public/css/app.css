@@ -873,10 +873,6 @@ iframe {
   font-size: 2rem;
 }
 
-.col_white {
-  color: #FFF;
-}
-
 footer {
   width: 100%;
   background-color: #2f2f2f;
@@ -895,7 +891,14 @@ footer iframe {
   }
 }
 
-footer .pt2 {
+@media (max-width: 37.5em) {
+  footer div.container.bottom_border > div > div.col-sm-6.col-md.col-6.col > h5 {
+    margin-top: 35px;
+  }
+}
+
+footer .white_col {
+  color: #FFF;
   padding-top: 40px;
   margin-bottom: 20px;
 }
@@ -907,7 +910,7 @@ footer p {
   margin-bottom: 8px;
 }
 
-footer .mb10 {
+footer .footer_desc {
   padding-bottom: 15px;
 }
 
@@ -931,30 +934,8 @@ footer li a:hover {
   text-decoration: none;
 }
 
-footer .fleft {
-  float: left;
-}
-
 footer .padding-right {
   padding-right: 10px;
-}
-
-footer .footer_ul2 {
-  margin: 0px;
-  list-style-type: none;
-  padding: 0px;
-}
-
-footer .footer_ul2 li p {
-  display: table;
-}
-
-footer .footer_ul2 li a:hover {
-  text-decoration: none;
-}
-
-footer .footer_ul2 li i {
-  margin-top: 5px;
 }
 
 footer .bottom_border {
@@ -962,7 +943,7 @@ footer .bottom_border {
   padding-bottom: 20px;
 }
 
-footer .foote_bottom_ul {
+footer .footer_bottom_ul {
   list-style-type: none;
   padding: 0px;
   display: table;
@@ -972,16 +953,16 @@ footer .foote_bottom_ul {
   margin-left: auto;
 }
 
-footer .foote_bottom_ul li {
+footer .footer_bottom_ul li {
   display: inline;
 }
 
-footer .foote_bottom_ul li a {
+footer .footer_bottom_ul li a {
   color: #999;
   margin: 0 12px;
 }
 
-footer .foote_bottom_ul li a:hover {
+footer .footer_bottom_ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -991,30 +972,30 @@ footer p a {
   text-decoration: none;
 }
 
-footer .social_footer_ul {
+footer .footer_social_ul {
   display: table;
   padding: 0;
   list-style-type: none;
 }
 
-footer .social_footer_ul li {
+footer .footer_social_ul li {
   padding: 10px;
   float: left;
 }
 
-footer .social_footer_ul li a {
+footer .footer_social_ul li a {
   color: #CCC;
   border: 1px solid #CCC;
   padding: 8px;
   border-radius: 50%;
 }
 
-footer .social_footer_ul li a:hover {
+footer .footer_social_ul li a:hover {
   color: #2f2f2f;
   background-color: #CCC;
 }
 
-footer .social_footer_ul li i {
+footer .footer_social_ul li i {
   width: 20px;
   height: 20px;
   text-align: center;

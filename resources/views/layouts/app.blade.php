@@ -7,7 +7,6 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="author" content="Williams KUBIAK">
     {{-- TODO remplir meta description --}}
     <meta name="description" content="Bar,café concert,zone de convivialité" lang="fr">
     <meta name="keywords"
@@ -16,11 +15,11 @@
     <meta name="robots" content="index, follow">
     <meta name="distribution" content="global">
     <meta name="author" content="williams KUBIAK">
-    <meta name="copyright" content="Lez'Arts du web">
+    <meta name="copyright" content="Le Coota">
     <meta name="abstract"
         content="Ce site presente le bar Le COOTA, les activités qu'il propose et les concerts à venir">
     <title>Le Coota -café/concert et zone de convivialité-</title>
-    <link rel="canonical" href="http://www.Le-coota.fr/" />
+    <link rel="canonical" href="https://www.Le-coota.fr/" />
     <meta property="og:title" content="Le COOTA bar/concert" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
@@ -34,8 +33,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>

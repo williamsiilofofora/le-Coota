@@ -20,7 +20,7 @@
              <div class="row ">
                     <div class="col-sm-6">
                         <div class="inputBox ">
-                            <div class="inputText">Nom du groupe</div>
+                            <div class="">Nom du groupe</div>
                             <input type="text" name="title" class="input"  value="{{ $event->title }}">
                         </div>
                     </div>
@@ -37,14 +37,14 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="inputBox ">
-                            <div class="inputText">Style de musique</div>
+                            <div class="">Style de musique</div>
                             <input type="text" name="style" class="input" value="{{$event->style}}">
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="inputBox">
-                            <div class="inputText">Origine du groupe</div>
+                            <div class="">Origine du groupe</div>
                             <input type="text" name="origine" class="input" value="{{$event->origine}}">
                         </div>
                     </div>
@@ -52,14 +52,14 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="inputBox ">
-                            <div class="inputText">Lien Facebook</div>
+                            <div class="">Lien Facebook</div>
                             <input type="text" name="lienFB" class="input" value="{{$event->lienFB}}">
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="inputBox">
-                            <div class="inputText">Lien YouTube</div>
+                            <div class="">Lien YouTube</div>
                             <input type="text" name="lienUT" class="input" value="{{$event->lienUT}}">
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="inputBox ">
-                            <div class="inputText">Description du groupe</div>
+                            <div class="">Description du groupe</div>
                             <textarea type="text" name="description" class="input">{{$event->description}}</textarea>
                         </div>
                     </div>

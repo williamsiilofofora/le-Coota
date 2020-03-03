@@ -26,7 +26,7 @@
                     <h2 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;"
                         class="animated fadeInUp">LE COOTA</h2><br />
                     <p data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 1;"
-                        class="zone animated fadeInUp">Ouvert 7/7 <br />17h/1h30</p>
+                        class="zone animated fadeInUp">Ouvert du jeudi au dimanche<br />17h/1h30</p>
                 </div>
 
             </div>

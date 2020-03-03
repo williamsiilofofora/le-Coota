@@ -1,5 +1,5 @@
 @foreach ($lastEvent as $lastEvent)
-<div class='container-fluid lastEvent' style="background-image: url('{{ asset('images/biba.jpeg')}}');">
+<div class='container-fluid lastEvent' style="background-image: url('{{ asset('images/biba.jpg')}}');">
     <div style="padding-top: 20px;">
         <div class="title col-10 col-sm-10 col-md-8 col-xl-3 mx-auto">
         <h3>Prochain concert</h3>

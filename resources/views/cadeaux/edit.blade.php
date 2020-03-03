@@ -20,14 +20,14 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="inputBox ">
-                        <div class="inputText">Nom du cadeau</div>
+                        <div class="">Nom du cadeau</div>
                         <input type="text" name="title" class="input">
                     </div>
                 </div>
 
                 <div class="col-sm-6">
                     <div class="inputBox">
-                        <div class="inputText">Date du cadeau</div>
+                        <div class="">Date du cadeau</div>
                         <input type="text" name="dateCadeaux" class="input">
                         <span>Ex:2020-06-30 21:00:00</span>
                     </div>
@@ -45,14 +45,14 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="inputBox ">
-                        <div class="inputText">Lien</div>
+                        <div class="">Lien</div>
                         <input type="text" name="lien" class="input">
                     </div>
                 </div>
 
                 <div class="col-sm-6">
                     <div class="inputBox ">
-                        <div class="inputText">Description du cadeau</div>
+                        <div class="">Description du cadeau</div>
                         <textarea type="text" name="descriptionCadeaux" class="input"></textarea>
                     </div>
                 </div>
