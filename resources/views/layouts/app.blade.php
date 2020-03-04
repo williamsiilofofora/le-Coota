@@ -37,11 +37,14 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+    
 
+            {{-- in your blade template --}}
+            @include('cookieConsent::index')
 <body>
+
     <div id="app">
-        <div id="rgpd">
-            @include('RGPD.bandeauRGPD')</div>
+        
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm main-menu fixed-top">
             <div class="container-fluid " id="bandeau" style="width:100%;">
                 <a class="navbar-brand" href="{{ url('/') }}">

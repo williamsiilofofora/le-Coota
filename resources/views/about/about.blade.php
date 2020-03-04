@@ -13,7 +13,7 @@
 
     </p>
     <div class="row">
-        <div class="card col-10 col-sm-8 col-lg-5 col-xl-2 ">
+        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2 ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{ asset('images/interieur.jpg')}}"
                     alt="Card image cap"></div>
             <div class="card-body">
@@ -60,11 +60,11 @@
             </div>
         </div>
 
-        <div class="card col-10 col-sm-8 col-lg-5 col-xl-2 ">
+        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2 ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/erdeven.jpeg')}}"
                     alt="Card image cap"></div>
             <div class="card-body">
-                <h4 class="card-title">ERDEVEN ET NATURISME</h4>
+                <h4 class="card-title">ERDEVEN</h4>
                 <hr>
 
 
@@ -82,7 +82,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
 
-                        <h5 class="modal-title">ERDEVEN ET NATURISME</h5>
+                        <h5 class="modal-title">ERDEVEN</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -115,7 +115,7 @@
             </div>
         </div>
 
-        <div class="card col-10 col-sm-8 col-lg-5 col-xl-2  ">
+        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/salsa.jpg')}}"
                     alt="Card image cap">
             </div>
@@ -159,7 +159,7 @@
             </div>
         </div>
 
-        <div class="card col-10 col-sm-8 col-lg-5 col-xl-2  ">
+        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/instru.jpg')}}"
                     alt="Card image cap"></div>
 
@@ -213,7 +213,7 @@
             </div>
         </div>
 
-        <div class="card col-10 col-sm-8 col-lg-5 col-xl-2  ">
+        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/coctail.jpg')}}"
                     alt="Card image cap"></div>
             <div class="card-body">

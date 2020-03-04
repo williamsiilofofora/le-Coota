@@ -42,59 +42,38 @@ h1 {
 }
 
 // bandeauRGPD
-
-#rgpd {
-
-    .row {
-        margin: 0 !important;
-    }
-
-    .cookie-alert {
-        position: -webkit-sticky;
+.js-cookie-consent {
         position: fixed;
-        top: 93vh;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        align-items: center;
-        background: $darkgrey;
-        color: #fff;
-        padding: 10px 15px;
+        bottom: 0px;
+        padding: 10px;
         width: 100%;
-        z-index: 100;
-
-
-        a {
-            display: block;
-            text-align: center;
-            padding: 5px 10px;
-            margin: 8px auto 0 auto;
-            border-radius: 10px;
-            background: transparent;
-            border: 2px solid #46A2D9;
-            color: #46A2D9;
-            transition: all .3s ease;
-            text-decoration: none;
-
-            &:hover {
-                background: #46A2D9;
-                color: $darkgrey;
-            }
-        }
-    }
-}
-
-
-@media only screen and (max-width:480px) {
-    .cookie-alert {
+        z-index: 100000;
+        background-color:$darkgrey;
         text-align: center;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        max-width: 700px;
-        padding: 10px 30px;
-    }
-}
+        justify-content: space-between;
+        .cookie-consent__message{
+            color:white;
+            font-size: 1.1em;
+        }
+        button{
+            color:white;
+            margin:10px 0 10px 35px;
+            border-radius: 5px;
+   
+} 
+.js-cookie-consent-agree {
+        background-color: $red;
+        margin:10;
+    
+}  
+    .rgpd a{
+    color:white;
+    text-decoration: none;
+ }    
+       
+ }
+ 
+
 
 
 

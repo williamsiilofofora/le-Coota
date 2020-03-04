@@ -6,6 +6,9 @@
     }
     text-align: center;
     width: 100%;
+    p{
+        font-weight: 700;
+    }
     .content{
         padding: 15px 0 12px 0;
       h1{
@@ -23,7 +26,7 @@
     .row {
         justify-content: space-around;
         .card{
-            margin-bottom: 25px;
+            margin: 25px 5px;
         }
         .card-img-top {
             width: 100%;
@@ -51,7 +54,9 @@
             height: auto;
         }
     }
-
+p.card-text{
+    margin-top: 5px;
+}
 }
 // visit
 .visite {

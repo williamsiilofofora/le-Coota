@@ -15,7 +15,7 @@ use Illuminate\Auth\Events\Logout;
 
 Route::get('/', 'AccueilController@index')->name('accueil.index');
 Auth::routes();
-
+// Auth::routes(['register' => false]);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/store-Event', 'EventController@store')->name('event.store');
