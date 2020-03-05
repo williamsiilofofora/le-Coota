@@ -6,7 +6,7 @@
 
     <div class="row ">
  @foreach ($cadeau as $cadeaux)
-        <iframe class="col-10 col-xl-4 mx-auto "
+        <iframe sandbox="allow-same-origin allow-scripts " class="col-10 col-xl-4 mx-auto "
     src="{{$cadeaux->lien}}" frameborder="0"
             allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

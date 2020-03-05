@@ -15,7 +15,8 @@
 
             <div class=" col-sm-6 col-md  col-8 col">
                 <h5 class="white_col ">ou nous trouver ?</h5>
-                <iframe
+  
+                <iframe sandbox="allow-same-origin allow-scripts "
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53734.96476495288!2d-3.158236!3d47.615442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x534c8bcd53d9a5de!2sLe%20Coota!5e1!3m2!1sfr!2sfr!4v1574774122414!5m2!1sfr!2sfr"
                     frameborder="0" style="border:0;" allowfullscreen="">
                 </iframe>
