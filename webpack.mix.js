@@ -14,3 +14,5 @@ mix.disableNotifications();
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
+mix.js('public/js/jquery.viewportchecker.js', 'public/js');
+mix.js('public/js/script.js', 'public/js');

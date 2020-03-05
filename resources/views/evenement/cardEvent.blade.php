@@ -17,8 +17,8 @@
                 <input type="hidden" name="interv" id="interv" value="{{$events->id}}">
                 <h4 class="card-title">{{$events->title}}</h4>
                 <hr>
-                <h6 class="">Style: {{$events->style}}</h6>
-                <p>Origine: {{$events->origine}}</p>
+                <h6 class=""><strong>Style: </strong>{{$events->style}}</h6>
+                <p><strong>Origine: </strong>{{$events->origine}}</p>
                 <p>Le {{ \Carbon\Carbon::parse($events->dateConcert)->locale('fr_FR')->format('d M Y')}}</p>
                 <p class="card-text">{{Str::limit($events->description,150)}}</p>
             </div>
@@ -47,8 +47,8 @@
                     <div class="modal-body">
                         <img class="image-fluid" src="{{asset('images/thumb') }}/{{$events->image}}"
                             alt="Card image cap"><br>
-                        <h6 class="">Style: {{$events->style}}</h6>
-                        <p>Origine: {{$events->origine}}</p>
+                        <h6 class=""><strong>Style: </strong>{{$events->style}}</h6>
+                        <p><strong>Origine: </strong>{{$events->origine}}</p>
                         <p>Le {{ \Carbon\Carbon::parse($events->dateConcert)->locale('fr_FR')->format('d M Y')}}</p>
                         <p class="card-text">{{$events->description}}</p>
                     </div>
