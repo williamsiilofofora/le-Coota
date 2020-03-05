@@ -15,7 +15,7 @@
     <div class="row">
         <div class="card col-10 col-sm-8 col-lg-4 col-xl-2 ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{ asset('images/interieur.jpg')}}"
-                    alt="Card image cap"></div>
+                    alt="intérieur du coota"></div>
             <div class="card-body">
                 <h4 class="card-title">LE COOTA</h4>
                 <hr>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <img class="image-fluid" src="{{ asset('images/interieur.jpg')}}" alt="Card image cap"><br>
+                        <img class="image-fluid" src="{{ asset('images/interieur.jpg')}}" alt="interieur du coota1"><br>
 
                         <p class="card-text">
                             Créé en Mai 2008 au retour d’un voyage de 3 mois en Australie,
@@ -62,7 +62,7 @@
 
         <div class="card col-10 col-sm-8 col-lg-4 col-xl-2 ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/erdeven.jpeg')}}"
-                    alt="Card image cap"></div>
+                    alt="Plage Erdeven"></div>
             <div class="card-body">
                 <h4 class="card-title">ERDEVEN</h4>
                 <hr>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <img class="image-fluid" src="{{asset('images/erdeven.jpeg')}}" alt="Card image cap"><br>
+                        <img class="image-fluid" src="{{asset('images/erdeven.jpeg')}}" alt="Plage Erdeven1"><br>
 
                         <p class="card-text">
                             Il y a comme un petit Air d’Heaven...
@@ -117,7 +117,7 @@
 
         <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/salsa.jpg')}}"
-                    alt="Card image cap">
+                    alt="Salsa">
             </div>
             <div class="card-body">
                 <h4 class="card-title">LA SALSA</h4>
@@ -144,7 +144,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <img class="image-fluid" src="{{asset('images/salsa.jpg')}}" alt="Card image cap"><br>
+                        <img class="image-fluid" src="{{asset('images/salsa.jpg')}}" alt="Salsa1"><br>
 
                         <p class="card-text">
                             Depuis 10 ans déjà, Thomas et Mélanie enseigne la Salsa Cubaine au Coota,
@@ -161,7 +161,7 @@
 
         <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/instru.jpg')}}"
-                    alt="Card image cap"></div>
+                    alt="instrument"></div>
 
             <div class="card-body">
                 <h4 class="card-title">JAM SESSION</h4>
@@ -188,7 +188,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <img class="image-fluid" src="{{asset('images/instru.jpg')}}" alt="Card image cap"><br>
+                        <img class="image-fluid" src="{{asset('images/instru.jpg')}}" alt="instruments de music"><br>
 
                         <p class="card-text">
                             C’est au Yucatan de Saint Gervais (haute Savoie) que j’ai découvert les jam session dans un
@@ -215,7 +215,7 @@
 
         <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/coctail.jpg')}}"
-                    alt="Card image cap"></div>
+                    alt="cocktail"></div>
             <div class="card-body">
                 <h4 class="card-title">LES COKTAILS</h4>
                 <hr>
@@ -241,7 +241,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <img class="image-fluid" src="{{asset('images/coctail.jpg')}}" alt="Card image cap"><br>
+                        <img class="image-fluid" src="{{asset('images/coctail.jpg')}}" alt="coctail"><br>
 
                         <p class="card-text">
                             La différence entre une salle de concert et un café-concert c’est

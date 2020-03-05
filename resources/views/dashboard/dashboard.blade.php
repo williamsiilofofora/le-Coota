@@ -26,7 +26,7 @@
             @foreach ($eventDash as $events)
             <tbody id="form-list-events-body">
                 <tr>
-                    <td><img class="circle" src="{{asset('images/thumb') }}/{{$events->image}}" alt="Card image cap">
+                    <td><img class="circle" src="{{asset('images/thumb') }}/{{$events->image}}" alt="{{$events->title}}">
                     </td>
                     <td>{{$events->title}}</td>
                     <td>{{$events->style}}</td>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="modal-body">
                             <img class="image-fluid" src="{{asset('images/thumb') }}/{{$events->image}}"
-                                alt="Card image cap"><br>
+                                alt="{{$events->title}}"><br>
                             <h6 class="">Style: {{$events->style}}</h6>
                             <p>Origine: {{$events->origine}}</p>
                             <p>Le {{ \Carbon\Carbon::parse($events->dateConcert)->locale('fr_FR')->format('d M Y')}}</p>

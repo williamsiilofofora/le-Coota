@@ -11,7 +11,7 @@
 
         <div class="card col-12 col-lg-5 mx-auto event">
             <div class="card-img image-fluid">
-                <img class="card-img-top" src="{{asset('images/thumb') }}/{{$events->image}}" alt="Card image cap">
+                <img class="card-img-top" src="{{asset('images/thumb') }}/{{$events->image}}" alt="{{$events->title}}">
             </div>
             <div class="card-body">
                 <input type="hidden" name="interv" id="interv" value="{{$events->id}}">
@@ -46,7 +46,7 @@
                     </div>
                     <div class="modal-body">
                         <img class="image-fluid" src="{{asset('images/thumb') }}/{{$events->image}}"
-                            alt="Card image cap"><br>
+                            alt="{{$events->title}}"><br>
                         <h6 class=""><strong>Style: </strong>{{$events->style}}</h6>
                         <p><strong>Origine: </strong>{{$events->origine}}</p>
                         <p>Le {{ \Carbon\Carbon::parse($events->dateConcert)->locale('fr_FR')->format('d M Y')}}</p>

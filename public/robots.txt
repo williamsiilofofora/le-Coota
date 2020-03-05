@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://test.lecoota.fr/public/sitemap.xml

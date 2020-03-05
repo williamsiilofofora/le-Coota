@@ -36,6 +36,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://lecoota.fr.fr/",
+            "name": "le Coota", 
+            "sameAs": [
+                "https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw",
+                "https://www.flickr.com/photos/lecoota",
+                "https://www.facebook.com/Le-Coota-215139838515726/",
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ZAC de Kerhillio, Erdeven",
+                "postalCode": "56410",
+                "addressCountry": "FR"
+            },
+           
+        }
+    </script>
 </head>
     
 
@@ -63,13 +83,13 @@
                     </ul>
                     <ul class="reseau  flex-row navbar-nav ml-auto">
                         <li class="nav-item col-1">
-                            <a href="https://www.facebook.com/Le-Coota-215139838515726/"  target="_blank"rel="noreferrer" class="fa fa-facebook"></a>
+                            <a href="https://www.facebook.com/Le-Coota-215139838515726/"  target="_blank"rel="noopener noreferrer" class="fa fa-facebook"></a>
                         </li>
                         <li class="nav-item col-1">
-                            <a href="https://www.flickr.com/photos/lecoota" target="_blank"rel="noreferrer" class="fa fa-flickr"></a>
+                            <a href="https://www.flickr.com/photos/lecoota" target="_blank"rel="noopener noreferrer" class="fa fa-flickr"></a>
                         </li>
                         <li class="nav-item col-1">
-                            <a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw" target="_blank" rel="noreferrer"
+                            <a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw" target="_blank" rel="noopener noreferrer"
                                 class="fa fa-youtube"></a>
                         </li>
 

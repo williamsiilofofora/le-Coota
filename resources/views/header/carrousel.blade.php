@@ -6,7 +6,7 @@
     </ol>
     <div class="carousel-inner bg ">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="{{asset('images')}}/{{$cootaImg1}}" alt="">
+            <img class="d-block w-100" src="{{asset('images')}}/{{$cootaImg1}}" alt="photo coota 1">
             <div class="carousel-caption">
 
                 <div class="content text-center ">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="{{asset('images')}}/{{$cootaImg2}}" alt="">
+            <img class="d-block w-100" src="{{asset('images')}}/{{$cootaImg2}}" alt="photo coota 2">
             <div class="carousel-caption">
 
                 <div class="content text-center ">
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100 img-fluid" src="{{asset('images')}}/{{$cootaImg3}}" alt="">
+            <img class="d-block w-100 img-fluid" src="{{asset('images')}}/{{$cootaImg3}}" alt="photo coota 3">
             <div class="carousel-caption">
 
                 <div class="content text-center">

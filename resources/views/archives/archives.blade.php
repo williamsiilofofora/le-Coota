@@ -59,7 +59,7 @@
                     @foreach ($eventArchives as $eventArchive)
                     <tr class="">
                         <td><img class="circle" src="{{asset('images/thumb') }}/{{$eventArchive->image}}"
-                                alt="Card image cap"></td>
+                                alt="{{$eventArchive->title}}"></td>
                         <td>{{$eventArchive->title}}</td>
                         <td>{{$eventArchive->style}}</td>
                         <td>{{$eventArchive->origine}}</td>
