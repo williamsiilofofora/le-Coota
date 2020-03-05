@@ -2,35 +2,35 @@
 
 @section('content')
 <section id="archive">
-    <div class="headerArchives">
+    <div class="headerArchives" >
 
         <img src="{{asset('images/cootajpg.jpg')}} " alt="">
 
     </div>
     <div style="text-align: center;">
-        <h4 class="box col-8 col-lg-3 mx-auto">Ils sont tous passé ici</h4>
-    </div>
+    <h4 class="box col-3 mx-auto">Ils sont tous passé ici</h4>
+</div>
     <div class="container-fluid ">
         <div class="table-wrapper mx-auto list-type">
             <div class="table-title">
                 <div class="row flex-row justify-content-around">
-                    {{-- <div class="col-sm-4">
-                        <div class="show-entries">
-                            <span>Montrer</span>
-                            <select>
-                                <option class='val' value="5">5</option>
-                                <option class='val' value="10">10</option>
-                                <option class='val' value="15">15</option>
-                                <option class='val' value="20">20</option>
-                            </select>
-
-                            <span>entrées</span>
-                        </div>
-                    </div> --}}
-                    <div class="col-5">
-                        <p><strong>Retrouvez tout les artistes qui sont passés au coota</strong></p>
+                    <div class="col-sm-4">
+                    <div class="show-entries">
+                        <span>Montrer</span>
+                        <select>
+                            <option class='val'value="5">5</option>
+                            <option class='val' value="10">10</option>
+                            <option class='val' value="15">15</option>
+                            <option class='val' value="20">20</option>
+                        </select>
+                       
+                        <span>entrées</span>
                     </div>
-                    <div class="col-5">
+                </div>
+                    <div class="col-4">
+                        <p>Retrouvez tout les artistes qui sont passer au coota</p>
+                    </div>
+                    <div class="col-4">
                         <form action="/search" method="GET">
                             @csrf
                             <div class="input-group">
@@ -47,10 +47,10 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Nom </i></th>
-                        <th>Style </th>
-                        <th>Origine </i></th>
-                        <th>Date </th>
+                        <th>Nom <i class="fa fa-sort"></i></th>
+                        <th>Style <i class="fa fa-sort"></th>
+                        <th>Origine <i class="fa fa-sort"></i></th>
+                        <th>Date <i class="fa fa-sort"></th>
                         <th>Facebook </th>
                         <th>You Tube</th>
                     </tr>
@@ -73,10 +73,10 @@
                     @endforeach
                 </tbody>
             </table>
-
+           
             <div class="clearfix">
                 {{-- <div class="hint-text">Showing <b>5</b> out of <b>10</b> entries</div> --}}
-                <div> {{$eventArchives->links()}}</div>
+                <div> {{$eventArchives->links()}}</div> 
             </div>
         </div>
     </div>

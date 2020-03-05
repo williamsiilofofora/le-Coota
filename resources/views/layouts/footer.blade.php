@@ -40,8 +40,9 @@
             <li><a href="{{route('accueil.index')}}">Accueil</a></li>
             <li><a href="{{route('concert.index')}}">Concert</a></li>
             <li><a href="{{route('archives.index')}}">Archives</a></li>
-            <li><a href="mailto:">Contact</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
+
         <p class="text-center">Le Coota Copyright @2020 | Réalisé par  <a href="https://www.lezartsduweb.fr/" target="_blank" rel="noopener noreferrer"><span style="color:green;">Lez'Arts</span> Du Web</a></p>
 
         <ul class="footer_social_ul mx-auto">
@@ -49,6 +50,7 @@
             <li><a href="https://www.flickr.com/photos/lecoota"target="_blank"rel="noopener noreferrer"><i class="fa fa-flickr"></i></a></li>
             <li><a href="https://www.youtube.com/channel/UCRtbkpKflCOHTEIV_8NBFgw"target="_blank"rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
             <li><a href="https://www.instagram.com/lecootakerhillio/"target="_blank"rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+
         </ul>
     </div>
 <!--fin footer-->

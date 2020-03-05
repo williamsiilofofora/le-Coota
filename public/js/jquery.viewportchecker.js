@@ -1,1 +1,188 @@
-!function(e){var t={};function o(n){if(t[n])return t[n].exports;var r=t[n]={i:n,l:!1,exports:{}};return e[n].call(r.exports,r,r.exports,o),r.l=!0,r.exports}o.m=e,o.c=t,o.d=function(e,t,n){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.t=function(e,t){if(1&t&&(e=o(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)o.d(n,r,function(t){return e[t]}.bind(null,r));return n},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,"a",t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p="/",o(o.s=40)}({40:function(e,t,o){e.exports=o(41)},41:function(e,t){function o(e){return(o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}!function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==o(e)&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)n.d(r,a,function(t){return e[t]}.bind(null,a));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="/",n(n.s=40)}({40:function(e,t,o){e.exports=o(41)},41:function(e,t){var o;(o=jQuery).fn.viewportChecker=function(e){var t={classToAdd:"visible",classToRemove:"invisible",classToAddForFullView:"full-visible",removeClassAfterAnimation:!1,offset:100,repeat:!1,invertBottomOffset:!0,callbackFunction:function(e,t){},scrollHorizontal:!1,scrollBox:window};o.extend(t,e);var n=this,r={height:o(t.scrollBox).height(),width:o(t.scrollBox).width()};return this.checkElements=function(){var e,a;t.scrollHorizontal?(e=Math.max(o("html").scrollLeft(),o("body").scrollLeft(),o(window).scrollLeft()),a=e+r.width):(e=Math.max(o("html").scrollTop(),o("body").scrollTop(),o(window).scrollTop()),a=e+r.height),n.each((function(){var n=o(this),l={},i={};if(n.data("vp-add-class")&&(i.classToAdd=n.data("vp-add-class")),n.data("vp-remove-class")&&(i.classToRemove=n.data("vp-remove-class")),n.data("vp-add-class-full-view")&&(i.classToAddForFullView=n.data("vp-add-class-full-view")),n.data("vp-keep-add-class")&&(i.removeClassAfterAnimation=n.data("vp-remove-after-animation")),n.data("vp-offset")&&(i.offset=n.data("vp-offset")),n.data("vp-repeat")&&(i.repeat=n.data("vp-repeat")),n.data("vp-scrollHorizontal")&&(i.scrollHorizontal=n.data("vp-scrollHorizontal")),n.data("vp-invertBottomOffset")&&(i.scrollHorizontal=n.data("vp-invertBottomOffset")),o.extend(l,t),o.extend(l,i),!n.data("vp-animated")||l.repeat){String(l.offset).indexOf("%")>0&&(l.offset=parseInt(l.offset)/100*r.height);var s=l.scrollHorizontal?n.offset().left:n.offset().top,c=l.scrollHorizontal?s+n.width():s+n.height(),d=Math.round(s)+l.offset,f=l.scrollHorizontal?d+n.width():d+n.height();l.invertBottomOffset&&(f-=2*l.offset),d<a&&f>e?(n.removeClass(l.classToRemove),n.addClass(l.classToAdd),l.callbackFunction(n,"add"),c<=a&&s>=e?n.addClass(l.classToAddForFullView):n.removeClass(l.classToAddForFullView),n.data("vp-animated",!0),l.removeClassAfterAnimation&&n.one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",(function(){n.removeClass(l.classToAdd)}))):n.hasClass(l.classToAdd)&&l.repeat&&(n.removeClass(l.classToAdd+" "+l.classToAddForFullView),l.callbackFunction(n,"remove"),n.data("vp-animated",!1))}}))},("ontouchstart"in window||"onmsgesturechange"in window)&&o(document).bind("touchmove MSPointerMove pointermove",this.checkElements),o(t.scrollBox).bind("load scroll",this.checkElements),o(window).resize((function(e){r={height:o(t.scrollBox).height(),width:o(t.scrollBox).width()},n.checkElements()})),this.checkElements(),this}}})}});
+
+/*
+    The MIT License (MIT)
+
+    Copyright (c) 2014 Dirk Groenen
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the "Software"), to deal in
+    the Software without restriction, including without limitation the rights to
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+    the Software, and to permit persons to whom the Software is furnished to do so,
+    subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+*/
+
+(function($){
+    $.fn.viewportChecker = function(useroptions){
+        // Define options and extend with user
+        var options = {
+            classToAdd: 'visible',
+            classToRemove : 'invisible',
+            classToAddForFullView : 'full-visible',
+            removeClassAfterAnimation: false,
+            offset: 100,
+            repeat: false,
+            invertBottomOffset: true,
+            callbackFunction: function(elem, action){},
+            scrollHorizontal: false,
+            scrollBox: window
+        };
+        $.extend(options, useroptions);
+
+        // Cache the given element and height of the browser
+        var $elem = this,
+            // boxSize = {height: $(options.scrollBox).height(), width: $(options.scrollBox).width()},
+            // scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1 || navigator.userAgent.toLowerCase().indexOf('windows phone') != -1) ? 'body' : 'html');
+            boxSize = {
+                height: $(options.scrollBox).height(),
+                width: $(options.scrollBox).width()
+            };
+        /*
+         * Main method that checks the elements and adds or removes the class(es)
+         */
+        this.checkElements = function(){
+            var viewportStart, viewportEnd;
+
+            // Set some vars to check with
+            if (!options.scrollHorizontal){
+                // viewportStart = $(scrollElem).scrollTop();
+                 viewportStart = Math.max(
+                     $('html').scrollTop(),
+                     $('body').scrollTop(),
+                     $(window).scrollTop()
+                 );
+                viewportEnd = (viewportStart + boxSize.height);
+            }
+            else{
+                // viewportStart = $(scrollElem).scrollLeft();
+                viewportStart = Math.max(
+                    $('html').scrollLeft(),
+                    $('body').scrollLeft(),
+                    $(window).scrollLeft()
+                );
+                viewportEnd = (viewportStart + boxSize.width);
+            }
+
+            // Loop through all given dom elements
+            $elem.each(function(){
+                var $obj = $(this),
+                    objOptions = {},
+                    attrOptions = {};
+
+                //  Get any individual attribution data
+                if ($obj.data('vp-add-class'))
+                    attrOptions.classToAdd = $obj.data('vp-add-class');
+                if ($obj.data('vp-remove-class'))
+                    attrOptions.classToRemove = $obj.data('vp-remove-class');
+                if ($obj.data('vp-add-class-full-view'))
+                    attrOptions.classToAddForFullView = $obj.data('vp-add-class-full-view');
+                if ($obj.data('vp-keep-add-class'))
+                    attrOptions.removeClassAfterAnimation = $obj.data('vp-remove-after-animation');
+                if ($obj.data('vp-offset'))
+                    attrOptions.offset = $obj.data('vp-offset');
+                if ($obj.data('vp-repeat'))
+                    attrOptions.repeat = $obj.data('vp-repeat');
+                if ($obj.data('vp-scrollHorizontal'))
+                    attrOptions.scrollHorizontal = $obj.data('vp-scrollHorizontal');
+                if ($obj.data('vp-invertBottomOffset'))
+                    attrOptions.scrollHorizontal = $obj.data('vp-invertBottomOffset');
+
+                // Extend objOptions with data attributes and default options
+                $.extend(objOptions, options);
+                $.extend(objOptions, attrOptions);
+
+                // If class already exists; quit
+                if ($obj.data('vp-animated') && !objOptions.repeat){
+                    return;
+                }
+
+                // Check if the offset is percentage based
+                if (String(objOptions.offset).indexOf("%") > 0)
+                    objOptions.offset = (parseInt(objOptions.offset) / 100) * boxSize.height;
+
+                // Get the raw start and end positions
+                var rawStart = (!objOptions.scrollHorizontal) ? $obj.offset().top : $obj.offset().left,
+                    rawEnd = (!objOptions.scrollHorizontal) ? rawStart + $obj.height() : rawStart + $obj.width();
+
+                // Add the defined offset
+                var elemStart = Math.round( rawStart ) + objOptions.offset,
+                    elemEnd = (!objOptions.scrollHorizontal) ? elemStart + $obj.height() : elemStart + $obj.width();
+
+                if (objOptions.invertBottomOffset)
+                    elemEnd -= (objOptions.offset * 2);
+
+                // Add class if in viewport
+                if ((elemStart < viewportEnd) && (elemEnd > viewportStart)){
+
+                    // Remove class
+                    $obj.removeClass(objOptions.classToRemove);
+                    $obj.addClass(objOptions.classToAdd);
+
+                    // Do the callback function. Callback wil send the jQuery object as parameter
+                    objOptions.callbackFunction($obj, "add");
+
+                    // Check if full element is in view
+                    if (rawEnd <= viewportEnd && rawStart >= viewportStart)
+                        $obj.addClass(objOptions.classToAddForFullView);
+                    else
+                        $obj.removeClass(objOptions.classToAddForFullView);
+
+                    // Set element as already animated
+                    $obj.data('vp-animated', true);
+
+                    if (objOptions.removeClassAfterAnimation) {
+                        $obj.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                            $obj.removeClass(objOptions.classToAdd);
+                        });
+                    }
+
+                // Remove class if not in viewport and repeat is true
+                } else if ($obj.hasClass(objOptions.classToAdd) && (objOptions.repeat)){
+                    $obj.removeClass(objOptions.classToAdd + " " + objOptions.classToAddForFullView);
+
+                    // Do the callback function.
+                    objOptions.callbackFunction($obj, "remove");
+
+                    // Remove already-animated-flag
+                    $obj.data('vp-animated', false);
+                }
+            });
+
+        };
+
+        /**
+         * Binding the correct event listener is still a tricky thing.
+         * People have expierenced sloppy scrolling when both scroll and touch
+         * events are added, but to make sure devices with both scroll and touch
+         * are handles too we always have to add the window.scroll event
+         *
+         * @see  https://github.com/dirkgroenen/jQuery-viewport-checker/issues/25
+         * @see  https://github.com/dirkgroenen/jQuery-viewport-checker/issues/27
+         */
+
+        // Select the correct events
+        if( 'ontouchstart' in window || 'onmsgesturechange' in window ){
+            // Device with touchscreen
+            $(document).bind("touchmove MSPointerMove pointermove", this.checkElements);
+        }
+
+        // Always load on window load
+        $(options.scrollBox).bind("load scroll", this.checkElements);
+
+        // On resize change the height var
+        $(window).resize(function(e){
+            boxSize = {height: $(options.scrollBox).height(), width: $(options.scrollBox).width()};
+            $elem.checkElements();
+        });
+
+        // trigger inital check if elements already visible
+        this.checkElements();
+
+        // Default jquery plugin behaviour
+        return this;
+    };
+})(jQuery);
+

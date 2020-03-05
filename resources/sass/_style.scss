@@ -19,23 +19,11 @@
     width: 50px;
     height: 50px;
 }
-// .box {
-//     background-image: linear-gradient(rgb(207, 202, 207), rgb(211, 208, 211)),
-//         linear-gradient(rgb(138, 135, 138), rgb(107, 98, 107)),
-//         linear-gradient(rgb(107, 104, 107), rgb(126, 123, 126)),
-//         linear-gradient(rgb(27, 26, 27), rgb(10, 10, 10)),
-//         linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-//     background-repeat: no-repeat;
-//     background-size: 4px 50%, 50% 4px, 4px 50%, 50% 4px, calc(100% - 8px) calc(100% - 8px);
-//     background-position: left bottom, left bottom, right top, right top, 4px 4px;
-
-//     padding: 10px;
-//     margin: 30px;
-// }
 .navbar-brand {
- margin-left: 25px;
- padding:0;      
+    margin-left: 25px;
+    padding: 0;
 }
+
 .navbar-brand span,
 h1 {
     font-family: "Twin-Marker",
@@ -43,11 +31,14 @@ h1 {
     font-size: 45px;
     color: $black;
     font-weight: 900;
-    
+
 }
-h2{
-    margin: 30px 0!important;
+
+h2 {
+    margin: 30px 0 !important;
 }
+
+
 // bandeauRGPD
 .js-cookie-consent {
         position: fixed;

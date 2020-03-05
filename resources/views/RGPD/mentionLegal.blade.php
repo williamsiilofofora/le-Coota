@@ -127,7 +127,7 @@
     <p>Les données personnelles collectées sont les suivantes:<br>
         -Aucunes<br>
         Un délégué à la protection des données : Williams Kubiak,<a
-            href="lezartsduweb@gmail.com">williams.kubiakpro@gmail.com</a> , est à votre dispositions
+            href="williams.kubiakpro@gmail.com">williams.kubiakpro@gmail.com</a> , est à votre dispositions
         pour
         toute question relative à la protection de vos données personnelles.</p>
 
@@ -170,7 +170,7 @@
         Ou par email, à l'adresse:
         <a href="sam@lecoota.fr">sam@lecoota.fr</a>
         Vous pouvez aussi vous adresser à notre délégué à la prottection des données: Williams Kubiak,<a
-            href="lezartsduweb@gmail.com">williams.kubiakpro@gmail.com</a>
+            href="williams.kubiakpro@gmail.com">williams.kubiakpro@gmail.com</a>
         , qui est a votre disposition pour toute question relative à la protection de vos
         données personnelles.</p>
 

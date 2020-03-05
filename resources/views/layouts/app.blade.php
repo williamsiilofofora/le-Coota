@@ -10,7 +10,7 @@
     {{-- TODO remplir meta description --}}
     <meta name="description" content="Bar,café concert,zone de convivialité" lang="fr">
     <meta name="keywords"
-        content="Bar, café, concert, zone, convivialité, coktail, ambiance, music, salsa, Bretagne, Erdeven, Etel, Auray, Lorient, 56, 56410">
+        content="Bar,café concert,zone de convivialité,ouvert 7/7,Bretagne,Erdeven,Etel,Auray,Lorient,56,56410">
     <meta name="language" content="fr">
     <meta name="robots" content="index, follow">
     <meta name="distribution" content="global">
@@ -18,7 +18,7 @@
     <meta name="copyright" content="Le Coota">
     <meta name="abstract"
         content="Ce site presente le bar Le COOTA, les activités qu'il propose et les concerts à venir">
-    <title>Le Coota - café/concert et zone de convivialité -</title>
+    <title>Le Coota -café/concert et zone de convivialité-</title>
     <link rel="canonical" href="https://www.Le-coota.fr/" />
     <meta property="og:title" content="Le COOTA bar/concert" />
     <meta property="og:type" content="website" />
@@ -26,7 +26,7 @@
     <meta property="og:site_name" content="lecoota.fr" />
     <meta property="og:url" content="https://lecoota.fr/" />
     <meta property="og:description" content="Bar, café/concert et zone de convivialitée à Erdeven">
-    <meta property="og:image" content="{{asset('images/logo-coota.png')}}" />
+    {{-- <meta property="og:image" content="" /> --}}
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -68,7 +68,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm main-menu fixed-top">
             <div class="container-fluid " id="bandeau" style="width:100%;">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <span>LE COOTA</span>
+                    <h1>LE COOTA</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -100,10 +100,10 @@
                             <a href="{{route('accueil.index')}}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="" href="{{route('concert.index')}}">Concerts</a>
+                            <a class="" href="{{route('concert.index')}}">Les Concerts</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('archives.index')}}">Archives</a>
+                            <a href="{{route('archives.index')}}">Les Archives</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('register')}}">register</a>
@@ -113,13 +113,13 @@
                             <a href="{{route('accueil.index')}}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="" href="{{route('concert.index')}}">Concerts</a>
+                            <a class="" href="{{route('concert.index')}}">Les Concerts</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('archives.index')}}">Archives</a>
+                            <a href="{{route('archives.index')}}">Les Archives</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('dashboard.index')}}">Dashboard</a>
+                            <a href="{{route('dashboard.index')}}">dashboard</a>
                         </li>
                         @endguest
                     </ul>
