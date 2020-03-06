@@ -1,7 +1,7 @@
 @extends('layouts.dashBoardNav')
 
 @section('content')
-<div class="col-md-12 dash" >
+<div class="col-md-12 dash">
 
     <form id="form-list-events">
         <legend>Liste des evénements</legend>
@@ -26,7 +26,8 @@
             @foreach ($eventDash as $events)
             <tbody id="form-list-events-body">
                 <tr>
-                    <td><img class="circle" src="{{asset('images/thumb') }}/{{$events->image}}" alt="{{$events->title}}">
+                    <td><img class="circle" src="{{asset('images/thumb') }}/{{$events->image}}"
+                            alt="{{$events->title}}">
                     </td>
                     <td>{{$events->title}}</td>
                     <td>{{$events->style}}</td>
@@ -76,7 +77,7 @@
                 </div>
             </div>
             @endforeach
-            
+
         </table>
         <div> {{$eventDash->links()}}</div>
     </form>
@@ -86,8 +87,7 @@
 
         <div class="pull-right">
             {{-- <a class="btn btn-default-btn-xs btn-primary"><i class="glyphicon glyphicon-refresh"></i> Refresh</a> --}}
-            <a href="{{route('cadeau.create')}}" class="btn btn-default-btn-xs btn-success"><i
-                    class=""></i> Nouveau</a>
+            <a href="{{route('cadeau.create')}}" class="btn btn-default-btn-xs btn-success"><i class=""></i> Nouveau</a>
         </div>
         <table class="table table-bordered table-condensed table-hover">
             <thead>
@@ -117,7 +117,7 @@
                 </tr>
             </tbody>
             @endforeach
-            
+
         </table>
         <div> {{$eventDash->links()}}</div>
     </form>

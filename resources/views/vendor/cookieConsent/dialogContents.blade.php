@@ -8,6 +8,6 @@
         {{ trans('cookieConsent::texts.agree') }}
     </button>
 
-    <button class="rgpd btn btn-success"><a href="{{route('rgpd.index')}}">en savoir plus</a> </button>
+    <a class="rgpd btn btn-success" href="{{route('rgpd.index')}}">en savoir plus</a>
 
 </div>

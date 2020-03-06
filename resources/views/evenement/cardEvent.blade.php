@@ -1,4 +1,4 @@
-<div class="container" >
+<div class="container">
     <div class="title box col-8 col-sm-6 col-lg-3 col-xl-4 mx-auto">
 
         <h2>Les concerts</h2>
@@ -28,8 +28,10 @@
                     data-target="#concertId{{$events->id}}" data-id="{{$events->id}}">
                     voir plus
                 </button><br>
-                <a title="facebook" href="{{ $events->lienFB}}" class="res fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
-                <a title="youtube" href="{{ $events->lienUT}}" class="res fa fa-youtube" target="_blank" rel="noopener noreferrer"></a>
+                <a title="facebook" href="{{ $events->lienFB}}" class="res fa fa-facebook" target="_blank"
+                    rel="noopener noreferrer"></a>
+                <a title="youtube" href="{{ $events->lienUT}}" class="res fa fa-youtube" target="_blank"
+                    rel="noopener noreferrer"></a>
             </div>
         </div>
 
@@ -53,8 +55,10 @@
                         <p class="card-text">{{$events->description}}</p>
                     </div>
                     <div class="modal-footer">
-                        <a title="facebook" href="{{ $events->lienFB}}" class="res fa fa-facebook"rel="noopener noreferrer"></a>
-                        <a title="youtube" href="{{ $events->lienUT}}" class="res fa fa-youtube"rel="noopener noreferrer"></a>
+                        <a title="facebook" href="{{ $events->lienFB}}" class="res fa fa-facebook"
+                            rel="noopener noreferrer"></a>
+                        <a title="youtube" href="{{ $events->lienUT}}" class="res fa fa-youtube"
+                            rel="noopener noreferrer"></a>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
                     </div>

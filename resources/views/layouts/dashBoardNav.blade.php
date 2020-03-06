@@ -28,17 +28,17 @@
             <div class=" ">
                 <aside class="col-12">
                     <nav class="nav navbar navbar-expand navbar-dark">
-                        <div class="collapse navbar-collapse" id=""> 
+                        <div class="collapse navbar-collapse" id="">
                             <a class="navbar-brand" href="{{ url('/') }}">
-                                        <h1>LE COOTA</h1>
+                                <h1>LE COOTA</h1>
                             </a>
                             <ul class="menu flex-row navbar-nav w-100">
-                                
+
                                 <li class="nav-item"><a class="nav-link pl-0"
                                         href="{{route('accueil.index')}}">Accueil</a></li>
                                 <li class="nav-item"><a class="nav-link pl-0"
                                         href="{{route('dashboard.index')}}">dashboard</a></li>
-                               
+
                             </ul>
                         </div>
                     </nav>
@@ -54,4 +54,5 @@
     </div>
 </body>
 <script src={{asset('js/script.js')}} defer></script>
+
 </html>

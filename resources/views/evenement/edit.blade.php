@@ -6,29 +6,30 @@
 
 
 
-    <div class="container formcard formcadeau edit">
-<div class=" ">
-    <div class="formBox">
-        <form method="POST" action="{{route('event.update',$event->id)}}" enctype="multipart/form-data" novalidate>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>Editer un evenement</h2>
+<div class="container formcard formcadeau edit">
+    <div class=" ">
+        <div class="formBox">
+            <form method="POST" action="{{route('event.update',$event->id)}}" enctype="multipart/form-data" novalidate>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Editer un evenement</h2>
+                    </div>
                 </div>
-            </div>
-            @csrf
-            @method('PUT')
-             <div class="row ">
+                @csrf
+                @method('PUT')
+                <div class="row ">
                     <div class="col-sm-6">
                         <div class="inputBox ">
                             <div class="">Nom du groupe</div>
-                            <input type="text" name="title" class="input"  value="{{ $event->title }}">
+                            <input type="text" name="title" class="input" value="{{ $event->title }}">
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="">
-                            <div class="" >Date du concert</div>
-                            <input type="datetime" name="dateConcert" class="input" value="{{$event->dateConcert}}"><span class="fa fa-calendar">
+                            <div class="">Date du concert</div>
+                            <input type="datetime" name="dateConcert" class="input"
+                                value="{{$event->dateConcert}}"><span class="fa fa-calendar">
                             </span>
                             <span>Ex:2019-06-30 21:00:00</span>
                         </div>
@@ -84,8 +85,9 @@
                     </div>
                 </div>
 
-            <input class="btn btn-success" type="submit" value="Publier">
-        </form>
+                <input class="btn btn-success" type="submit" value="Publier">
+            </form>
+        </div>
     </div>
-</div></div>
+</div>
 @endsection

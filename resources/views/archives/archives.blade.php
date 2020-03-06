@@ -64,9 +64,11 @@
                         <td>{{$eventArchive->style}}</td>
                         <td>{{$eventArchive->origine}}</td>
                         <td>{{$eventArchive->dateConcert}}</td>
-                        <td> <a title="facebook"href="{{ $eventArchive->lienFB}}" class="fa fa-facebook" target="_blank"rel="noopener noreferrer"></a></td>
+                        <td> <a title="facebook" href="{{ $eventArchive->lienFB}}" class="fa fa-facebook"
+                                target="_blank" rel="noopener noreferrer"></a></td>
                         <td>
-                            <a title="youtube"href="{{ $eventArchive->lienUT}}" class="fa fa-youtube" target="_blank"rel="noopener noreferrer"></a>
+                            <a title="youtube" href="{{ $eventArchive->lienUT}}" class="fa fa-youtube" target="_blank"
+                                rel="noopener noreferrer"></a>
 
                         </td>
                     </tr>

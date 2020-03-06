@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="container-fluid" >
+<div class="container-fluid">
     @if (session('status'))
     <div class="message status">
         {{ session('status') }}
@@ -29,8 +29,9 @@
 
                     <div class="col-sm-6">
                         <div class="inputBox">
-                            <div class="" >Date du concert</div>
-                            <input type="datetime" name="dateConcert" class="input" value="2020-06-30 21:00:00"><span class="fa fa-calendar">
+                            <div class="">Date du concert</div>
+                            <input type="datetime" name="dateConcert" class="input" value="2020-06-30 21:00:00"><span
+                                class="fa fa-calendar">
                             </span>
                             <span>Ex:2019-06-30 21:00:00</span>
                         </div>

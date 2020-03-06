@@ -49,8 +49,6 @@
                             C’est aussi comme tout bistrot, un lieu d’échanges et de rencontres,
                             un lieu d’écoute et de respect, un lieu d’humour et de découverte,
                             bref un de ces lieux dont on a tant besoin pour continuer à vivre les uns avec les autres…
-
-
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -76,7 +74,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalLeCoin" tabindex="-1" role="dialog"
+        <div class="modal animated zoomInDown" id="modalLeCoin" tabindex="-1" role="dialog1"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -116,8 +114,7 @@
         </div>
 
         <div class="card col-10 col-sm-8 col-lg-3 col-xl-2  ">
-            <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/salsa.jpg')}}"
-                    alt="Salsa">
+            <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/salsa.jpg')}}" alt="Salsa">
             </div>
             <div class="card-body">
                 <h4 class="card-title">LA SALSA</h4>
@@ -131,7 +128,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalSalsa" tabindex="-1" role="dialog"
+        <div class="modal animated zoomInDown" id="modalSalsa" tabindex="-1" role="dialog2"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -175,7 +172,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalJamSession" tabindex="-1" role="dialog"
+        <div class="modal animated zoomInDown" id="modalJamSession" tabindex="-1" role="dialog3"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -228,7 +225,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalCoktail" tabindex="-1" role="dialog"
+        <div class="modal animated zoomInDown" id="modalCoktail" tabindex="-1" role="dialog4"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
