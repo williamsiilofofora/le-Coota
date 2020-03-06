@@ -28,7 +28,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalLeCoota" tabindex="-1" role="dialog"
+        <div class="modal animated zoomInDown" id="modalLeCoota" tabindex="-1" 
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -74,7 +74,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalLeCoin" tabindex="-1" role="dialog1"
+        <div class="modal animated zoomInDown" id="modalLeCoin" tabindex="-1" 
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -128,7 +128,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalSalsa" tabindex="-1" role="dialog2"
+        <div class="modal animated zoomInDown" id="modalSalsa" tabindex="-1" 
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -172,7 +172,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalJamSession" tabindex="-1" role="dialog3"
+        <div class="modal animated zoomInDown" id="modalJamSession" tabindex="-1" 
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -225,7 +225,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal animated zoomInDown" id="modalCoktail" tabindex="-1" role="dialog4"
+        <div class="modal animated zoomInDown" id="modalCoktail" tabindex="-1" 
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
