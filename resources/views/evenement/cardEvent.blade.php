@@ -28,8 +28,8 @@
                     data-target="#concertId{{$events->id}}" data-id="{{$events->id}}">
                     voir plus
                 </button><br>
-                <a href="{{ $events->lienFB}}" class="res fa fa-facebook" target="_blank"></a>
-                <a href="{{ $events->lienUT}}" class="res fa fa-youtube" target="_blank"></a>
+                <a title="facebook" href="{{ $events->lienFB}}" class="res fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+                <a title="youtube" href="{{ $events->lienUT}}" class="res fa fa-youtube" target="_blank" rel="noopener noreferrer"></a>
             </div>
         </div>
 
@@ -53,8 +53,8 @@
                         <p class="card-text">{{$events->description}}</p>
                     </div>
                     <div class="modal-footer">
-                        <a href="{{ $events->lienFB}}" class="res fa fa-facebook"></a>
-                        <a href="{{ $events->lienUT}}" class="res fa fa-youtube"></a>
+                        <a title="facebook" href="{{ $events->lienFB}}" class="res fa fa-facebook"rel="noopener noreferrer"></a>
+                        <a title="youtube" href="{{ $events->lienUT}}" class="res fa fa-youtube"rel="noopener noreferrer"></a>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
                     </div>

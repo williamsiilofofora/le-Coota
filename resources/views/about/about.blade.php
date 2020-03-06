@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="">
-        <div class="content col-8 col-sm-4 col-lg-3 col-xl-2 mx-auto box">
-            <h1>LE COOTA</h1>
+        <div class="content col-8 col-sm-4 col-lg-3 col-xl-2 mx-auto">
+            <h3 class="coota">LE COOTA</h3>
 
         </div>
     </div>
@@ -13,7 +13,7 @@
 
     </p>
     <div class="row">
-        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2 ">
+        <div class="card col-10 col-sm-8 col-lg-3 col-xl-2 ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{ asset('images/interieur.jpg')}}"
                     alt="intérieur du coota"></div>
             <div class="card-body">
@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2 ">
+        <div class="card col-10 col-sm-8 col-lg-3 col-xl-2 ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/erdeven.jpeg')}}"
                     alt="Plage Erdeven"></div>
             <div class="card-body">
@@ -115,7 +115,7 @@
             </div>
         </div>
 
-        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
+        <div class="card col-10 col-sm-8 col-lg-3 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/salsa.jpg')}}"
                     alt="Salsa">
             </div>
@@ -159,7 +159,7 @@
             </div>
         </div>
 
-        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
+        <div class="card col-10 col-sm-8 col-lg-3 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/instru.jpg')}}"
                     alt="instrument"></div>
 
@@ -213,7 +213,7 @@
             </div>
         </div>
 
-        <div class="card col-10 col-sm-8 col-lg-4 col-xl-2  ">
+        <div class="card col-10 col-sm-8 col-lg-3 col-xl-2  ">
             <div class="card-img"><img class="card-img-top image-fluid" src="{{asset('images/coctail.jpg')}}"
                     alt="cocktail"></div>
             <div class="card-body">

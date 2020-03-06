@@ -10,8 +10,8 @@
             <div class="carousel-caption">
 
                 <div class="content text-center ">
-                    <h2 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;"
-                        class="animated fadeInUp">LE COOTA </h2><br />
+                    <h1 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;"
+                        class="titre animated fadeInUp">LE COOTA </h1><br />
                     <p data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 1;"
                         class="zone animated fadeInUp">Cafe concert</p>
                 </div>
@@ -45,11 +45,11 @@
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href=".carousel" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="" role="button" data-slide="prev">
         <span class="chevron" aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href=".carousel" role="button" data-slide="next">
+    <a class="carousel-control-next" href="" role="button" data-slide="next">
         <span class="chevron" aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
         <span class="sr-only">Next</span>
     </a>
