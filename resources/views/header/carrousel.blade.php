@@ -1,8 +1,8 @@
-<div class="carousel slide carousel-fade" data-ride="carousel">
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target=".carousel" data-slide-to="0" class="active"></li>
-        <li data-target=".carousel" data-slide-to="1"></li>
-        <li data-target=".carousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner bg ">
         <div class="carousel-item active">
@@ -45,11 +45,11 @@
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
         <span class="chevron" aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
         <span class="chevron" aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
         <span class="sr-only">Next</span>
     </a>

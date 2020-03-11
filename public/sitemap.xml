@@ -8,37 +8,37 @@
 
 
 <url>
-  <loc>https://test.lecoota.fr/</loc>
+  <loc>https://lecoota.fr/</loc>
   <lastmod>2020-03-05T13:20:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://test.lecoota.fr/rgpd</loc>
+  <loc>https://lecoota.fr/rgpd</loc>
   <lastmod>2020-03-05T13:20:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://test.lecoota.fr/concert</loc>
+  <loc>https://lecoota.fr/concert</loc>
   <lastmod>2020-03-05T13:20:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://test.lecoota.fr/archives</loc>
+  <loc>https://lecoota.fr/archives</loc>
   <lastmod>2020-03-05T13:20:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://test.lecoota.fr/register</loc>
+  <loc>https://lecoota.fr/register</loc>
   <lastmod>2020-03-05T13:20:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://test.lecoota.fr/login</loc>
+  <loc>https://lecoota.fr/login</loc>
   <lastmod>2020-03-05T13:20:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://test.lecoota.fr/password/reset</loc>
+  <loc>https://lecoota.fr/password/reset</loc>
   <lastmod>2020-03-05T13:20:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>

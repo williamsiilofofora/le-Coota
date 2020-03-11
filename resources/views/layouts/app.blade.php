@@ -9,8 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- TODO remplir meta description --}}
     <meta name="description" content="Ouvert du jeudi au dimanche Le Coota est un
-        café concert qui organise environs 120 concerts par an. C’est aussi comme tout bistrot, un lieu d’échanges et de
-        rencontres, un lieu d’écoute et de découverte" lang="fr">
+        café concert qui organise environs 120 concerts par an. C’est aussi, un lieu d’échanges, de
+        rencontres, d’écoute et de découverte" lang="fr">
     <meta name="keywords"
         content="Bar, café, concert, zone, convivialité, coktail, ambiance, music, salsa, Bretagne, Erdeven, Etel, Auray, Lorient, 56, 56410">
     <meta name="language" content="fr">
@@ -23,7 +23,7 @@
     <title>Le Coota - café/concert et zone de convivialité -</title>
     <link rel="canonical" href="https://www.Le-coota.fr/" />
 
-    <meta property="og:title" content="Le COOTA bar/concert" />
+    <meta property="og:title" content="Le COOTA café/concert" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content="lecoota.fr" />

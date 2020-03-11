@@ -49,7 +49,7 @@
         59100 ROUBAIX</p>
 
     <h4>1.4 Délégué à la protection des données(DPO):</h4>
-    <p>Un délégué à la protection des données : Williams Kubiak, williams.kubiakpro@gmail.com, est à
+    <p>Un délégué à la protection des données : Williams Kubiak, lezartsduweb@gmail.com, est à
         votre disposition pour toute question relative à la protection de vos données personnelles.</p>
 
     <h3>Article 2-Accés au site</h3>
@@ -127,7 +127,7 @@
     <p>Les données personnelles collectées sont les suivantes:<br>
         -Aucunes<br>
         Un délégué à la protection des données : Williams Kubiak,<a
-            href="williams.kubiakpro@gmail.com">williams.kubiakpro@gmail.com</a> , est à votre dispositions
+            href="lezartsduweb@gmail.com">lezartsduweb@gmail.com</a> , est à votre dispositions
         pour
         toute question relative à la protection de vos données personnelles.</p>
 
@@ -170,7 +170,7 @@
         Ou par email, à l'adresse:
         <a href="sam@lecoota.fr">sam@lecoota.fr</a>
         Vous pouvez aussi vous adresser à notre délégué à la prottection des données: Williams Kubiak,<a
-            href="williams.kubiakpro@gmail.com">williams.kubiakpro@gmail.com</a>
+            href="lezartsduweb@gmail.com">lezartsduweb@gmail.com</a>
         , qui est a votre disposition pour toute question relative à la protection de vos
         données personnelles.</p>
 
