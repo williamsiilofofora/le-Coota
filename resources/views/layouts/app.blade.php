@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -112,9 +111,9 @@
                         <li class="nav-item">
                             <a title="archives" href="{{route('archives.index')}}">Archives</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{route('register')}}">register</a>
-                        </li>
+                        </li> --}}
                         @else
                         <li class="nav-item">
                             <a title="accueil" href="{{route('accueil.index')}}">Accueil</a>
