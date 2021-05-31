@@ -27,6 +27,7 @@
         justify-content: space-around;
         .card{
             margin: 25px 5px;
+            box-shadow: 5px 5px 10px gray;
         }
         .card-img-top {
             width: 100%;
@@ -36,7 +37,7 @@
                 height: auto;
             }
             @include breakpoint(desktop) {
-                height: 180px;
+                height: 210px;
             }
         }
 

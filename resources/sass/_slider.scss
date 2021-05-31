@@ -5,14 +5,27 @@
     border-bottom: 3px solid;
     border-image-source: linear-gradient(to top, black, orangered);
     overflow: hidden;
-
-    //   @include breakpoint(tablet) {
-    //       height: 400px;
-    //   }
-
-    //   @include breakpoint(laptop) {
-    //       height: 700px;
-    //   }
+}
+.encartBandeau{
+    position: absolute;
+    z-index: 50;
+    width: 50%;
+    // height:50%;
+    // background-color: green;
+    transform: rotate(-35deg);
+  
+.bandeauEvent{
+    position:relative;
+    bottom:0;
+    left: 0;
+    background-color: red;
+    // font-size: 2.5rem;
+    color: wheat;
+    
+    max-width: 100%;
+    text-align: center;
+    font-family: impact;
+}
 }
 
 .background::after {
@@ -25,23 +38,56 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-// @media only screen and (min-width: 992px) and (max-width: 1199px) {
-//     .background {
-//         height: 700px;
-//     }
-// }
+@media only screen and (min-width: 1824px) {
 
-// @media only screen and (min-width: 768px) and (max-width: 991px) {
-//     .background {
-//         height: 650px;
-//     }
-// }
+      .encartBandeau{
+            top: 270px;
+            left: -200px;
+            p{
+                font-size:2.5rem;
+            }
+    }
+}
 
-// @media only screen and (max-width: 767px) {
-//     .background {
-//         height: 400px;
-//     }
-// }
+@media only screen and (min-width: 1224px) and (max-width: 1824px) {
+    .encartBandeau{
+            top: 220px;
+            left: -10%!important;
+            p{
+                font-size:1.8rem;
+            }
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1223px) {
+    .encartBandeau{
+            top:195px;
+            left: -7%!important;
+            p{
+                font-size:1.5rem;
+            }
+    }
+}
+@media only screen and (min-width: 500px)  and (max-width: 959px){
+    .encartBandeau{
+        top: 170px;
+           left: -7%!important;
+            width: 63%;
+            p{
+                font-size:1.2rem;
+            }
+    }
+}
+    @media only screen and (min-width: 300px) and (max-width: 499px){
+    .encartBandeau{
+            top:150px;
+          left: -7%!important;
+            width: 70%;
+            p{
+                font-size:0.9rem;
+            }
+    }
+}
+
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -81,13 +127,12 @@
     text-align: center;
     // align-content: center;
     max-height: 100vh;
-    top: 22%;
+    top: 18%;
     bottom: auto;
 
     .content {
         position: relative;
         z-index: 1;
-
        .titre, h2 {
             z-index: 1;
             color: $red;

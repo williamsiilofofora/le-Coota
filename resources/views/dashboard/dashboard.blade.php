@@ -2,7 +2,17 @@
 
 @section('content')
 <div class="col-md-12 dash">
+    <div class="col-5">
+        <form action="/searchDash" method="GET">
+            @csrf
+            <div class="input-group">
+                <span class="input-group-prepend"><button type="submit" class="btn btn-primary"><i
+                            class="fa fa-search"></i></button></span>
+                <input type="search" name="searchDash" class="form-control" placeholder="Rechercher">
+            </div>
 
+        </form>
+    </div>
     <form id="form-list-events">
         <legend>Liste des evénements</legend>
 

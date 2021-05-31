@@ -14,7 +14,7 @@
 use Illuminate\Auth\Events\Logout;
 
 Route::get('/', 'AccueilController@index')->name('accueil.index');
-// Auth::routes();
+Auth::routes();
 Auth::routes(['register' => false]);
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -31,6 +31,7 @@ Route::put('/update-Cadeau/{id}', 'CadeauController@update')->name('cadeau.updat
 Route::get('/delete-Cadeau/{id}', 'CadeauController@destroy')->name('cadeau.destroy');
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
+Route::get('/searchDash', 'DashboardController@searchDash')->name('dashboard.search');
 Route::get('/archives', 'ArchivesController@index')->name('archives.index');
 Route::get('/search', 'ArchivesController@search')->name('archives.search');
 Route::get('/concert', 'EventController@index')->name('concert.index');
