@@ -13,7 +13,7 @@
     <div class="container-fluid ">
         <div class="table-wrapper mx-auto list-type">
             <div class="table-title">
-                <div class="row flex-row justify-content-around">
+                <div class="row flex-row justify-content-between">
                     {{-- <div class="col-sm-4">
                         <div class="show-entries">
                             <span>Montrer</span>
@@ -33,7 +33,7 @@
                     <div class="col-5">
                         <form action="/search" method="GET">
                             @csrf
-                            <div class="input-group">
+                            <div class="input-group input-search">
                                 <span class="input-group-prepend"><button type="submit" class="btn btn-primary"><i
                                             class="fa fa-search"></i></button></span>
                                 <input type="search" name="search" class="form-control" placeholder="Rechercher">

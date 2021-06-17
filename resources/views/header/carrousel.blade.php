@@ -1,10 +1,10 @@
 
 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="encartBandeau">
+    {{-- <div class="encartBandeau">
         <div class="bandeauEvent">
             <p>Re-Ouverture du COOTA le 10 juin 2021</p>
         </div>
-    </div>
+    </div> --}}
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
