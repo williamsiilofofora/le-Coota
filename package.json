@@ -26,6 +26,6 @@
     },
     "dependencies": {
         "animate.css": "^3.7.2",
-        "node-sass": "^4.14.1"
+        "node-sass": "^7.0.0"
     }
 }
